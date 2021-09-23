@@ -1,0 +1,4032 @@
+Using TensorFlow backend.
+2021-09-23 11:12:39.666556: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2021-09-23 11:12:39.689098: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2599990000 Hz
+2021-09-23 11:12:39.689616: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x558780c2d050 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-09-23 11:12:39.689640: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-09-23 11:12:39.691626: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-09-23 11:12:39.742750: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-09-23 11:12:39.743133: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x558780cbb8f0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-09-23 11:12:39.743148: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): NVIDIA GeForce GTX 960M, Compute Capability 5.0
+2021-09-23 11:12:39.743274: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-09-23 11:12:39.743518: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1639] Found device 0 with properties: 
+name: NVIDIA GeForce GTX 960M major: 5 minor: 0 memoryClockRate(GHz): 1.176
+pciBusID: 0000:01:00.0
+2021-09-23 11:12:39.743710: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-09-23 11:12:39.744779: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-09-23 11:12:39.745701: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2021-09-23 11:12:39.745932: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2021-09-23 11:12:39.747174: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2021-09-23 11:12:39.748135: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2021-09-23 11:12:39.751101: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-09-23 11:12:39.751201: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-09-23 11:12:39.751514: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-09-23 11:12:39.751740: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1767] Adding visible gpu devices: 0
+2021-09-23 11:12:39.751770: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-09-23 11:12:39.752138: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1180] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-09-23 11:12:39.752149: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1186]      0 
+2021-09-23 11:12:39.752154: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1199] 0:   N 
+2021-09-23 11:12:39.752233: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-09-23 11:12:39.752500: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:983] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-09-23 11:12:39.752745: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1325] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 3490 MB memory) -> physical GPU (device: 0, name: NVIDIA GeForce GTX 960M, pci bus id: 0000:01:00.0, compute capability: 5.0)
+---
+Now processing: bird/2008_005534.jpg
+Benign Start:  1632409962.4923007
+2021-09-23 11:12:42.802713: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-09-23 11:12:43.643061: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+Labels: ['bird', 'bird']
+Benign End:  1632409967.8677135
+Attack Start:  1632409967.8677328
+Labels: ['dog', 'dog']
+Attack End:  1632409972.9855618
+---
+Now processing: bird/2008_005260.jpg
+Benign Start:  1632409972.985782
+Labels: ['bird', 'bird', 'bird', 'bird', 'bird', 'bird', 'bird', 'bird', 'bird', 'bird', 'bird', 'bird', 'bird', 'bird']
+Benign End:  1632409973.29002
+Attack Start:  1632409973.290038
+Labels: ['cat', 'bird', 'bird', 'bird', 'person']
+Attack End:  1632409974.1113873
+---
+Now processing: bird/2008_003894.jpg
+Benign Start:  1632409974.1115317
+Labels: ['bird']
+Benign End:  1632409974.3682659
+Attack Start:  1632409974.3682842
+Labels: ['person', 'person']
+Attack End:  1632409975.1604846
+---
+Now processing: bird/2008_007188.jpg
+Benign Start:  1632409975.1606286
+Labels: ['bird']
+Benign End:  1632409975.4880826
+Attack Start:  1632409975.488103
+Labels: []
+Attack End:  1632409976.272065
+---
+Now processing: bird/2008_004251.jpg
+Benign Start:  1632409976.2722123
+Labels: ['bird', 'chair']
+Benign End:  1632409976.5346696
+Attack Start:  1632409976.5346873
+Labels: ['bird', 'chair']
+Attack End:  1632409977.3247628
+---
+Now processing: bird/2008_000134.jpg
+Benign Start:  1632409977.3249106
+Labels: ['bird', 'bird']
+Benign End:  1632409977.5876758
+Attack Start:  1632409977.5876944
+Labels: ['bird', 'aeroplane', 'bird']
+Attack End:  1632409978.380904
+---
+Now processing: bird/2008_003291.jpg
+Benign Start:  1632409978.381114
+Labels: ['bird']
+Benign End:  1632409978.63856
+Attack Start:  1632409978.638579
+Labels: ['bird']
+Attack End:  1632409979.427405
+---
+Now processing: bird/2008_004825.jpg
+Benign Start:  1632409979.427561
+Labels: ['bird']
+Benign End:  1632409979.6837137
+Attack Start:  1632409979.6837327
+Labels: ['cat', 'person', 'sofa']
+Attack End:  1632409980.4805703
+---
+Now processing: bird/2008_003997.jpg
+Benign Start:  1632409980.4807248
+Labels: ['bird']
+Benign End:  1632409980.7380106
+Attack Start:  1632409980.7380288
+Labels: ['person']
+Attack End:  1632409981.5285819
+---
+Now processing: bird/2008_005924.jpg
+Benign Start:  1632409981.5287328
+Labels: ['bird', 'bird', 'bird']
+Benign End:  1632409981.7913935
+Attack Start:  1632409981.7914116
+Labels: ['bird']
+Attack End:  1632409982.582095
+---
+Now processing: bird/2008_000472.jpg
+Benign Start:  1632409982.5822444
+Labels: []
+Benign End:  1632409982.8365552
+Attack Start:  1632409982.8365738
+too many indices for array: array is 1-dimensional, but 2 were indexed
+Exception processing bird/2008_000472.jpg
+---
+Now processing: bird/2008_006924.jpg
+Benign Start:  1632409983.023787
+Labels: ['bird', 'person']
+Benign End:  1632409983.2848306
+Attack Start:  1632409983.2848492
+Labels: ['person', 'person', 'person', 'bird']
+Attack End:  1632409984.08985
+---
+Now processing: bird/2008_003683.jpg
+Benign Start:  1632409984.0900497
+Labels: ['bird']
+Benign End:  1632409984.3502777
+Attack Start:  1632409984.3502965
+Labels: ['cat']
+Attack End:  1632409985.135418
+---
+Now processing: bird/2008_000533.jpg
+Benign Start:  1632409985.1355755
+Labels: ['bird']
+Benign End:  1632409985.3945272
+Attack Start:  1632409985.394546
+Labels: ['bird']
+Attack End:  1632409986.1835089
+---
+Now processing: bird/2008_004425.jpg
+Benign Start:  1632409986.1836596
+Labels: ['bird']
+Benign End:  1632409986.4444928
+Attack Start:  1632409986.444512
+Labels: ['pottedplant', 'bird']
+Attack End:  1632409987.239565
+---
+Now processing: bird/2008_003211.jpg
+Benign Start:  1632409987.2397275
+Labels: ['bird']
+Benign End:  1632409987.5032947
+Attack Start:  1632409987.5033145
+Labels: ['bird']
+Attack End:  1632409988.297312
+---
+Now processing: bird/2008_003222.jpg
+Benign Start:  1632409988.2974694
+Labels: ['bird']
+Benign End:  1632409988.6305153
+Attack Start:  1632409988.6305373
+Labels: ['boat']
+Attack End:  1632409989.4150672
+---
+Now processing: bird/2008_004805.jpg
+Benign Start:  1632409989.4152281
+Labels: ['bird']
+Benign End:  1632409989.6768706
+Attack Start:  1632409989.6768901
+Labels: []
+Attack End:  1632409990.4637382
+---
+Now processing: bird/2008_003106.jpg
+Benign Start:  1632409990.4638977
+Labels: ['bird', 'bird', 'bird', 'cat']
+Benign End:  1632409990.7329254
+Attack Start:  1632409990.7329433
+Labels: ['cat', 'sofa']
+Attack End:  1632409991.5261657
+---
+Now processing: bird/2008_001522.jpg
+Benign Start:  1632409991.5263276
+Labels: ['bird', 'bird', 'bird', 'bird']
+Benign End:  1632409991.7982538
+Attack Start:  1632409991.7982717
+Labels: ['bird', 'bird', 'bird']
+Attack End:  1632409992.5960176
+---
+Now processing: bird/2008_004742.jpg
+Benign Start:  1632409992.596162
+Labels: ['bird']
+Benign End:  1632409992.8520658
+Attack Start:  1632409992.8521018
+Labels: []
+Attack End:  1632409993.63566
+---
+Now processing: bird/2008_001194.jpg
+Benign Start:  1632409993.6358125
+Labels: ['bird']
+Benign End:  1632409993.8924036
+Attack Start:  1632409993.892423
+Labels: ['bird', 'cat']
+Attack End:  1632409994.6842964
+---
+Now processing: bird/2008_007501.jpg
+Benign Start:  1632409994.6844454
+Labels: ['bird']
+Benign End:  1632409994.947265
+Attack Start:  1632409994.947284
+Labels: ['bird']
+Attack End:  1632409995.739538
+---
+Now processing: bird/2008_006179.jpg
+Benign Start:  1632409995.739695
+Labels: ['bird']
+Benign End:  1632409995.9979525
+Attack Start:  1632409995.997972
+Labels: ['bird']
+Attack End:  1632409996.782778
+---
+Now processing: bird/2008_005821.jpg
+Benign Start:  1632409996.782928
+Labels: ['bird']
+Benign End:  1632409997.0418746
+Attack Start:  1632409997.0418944
+Labels: ['cat']
+Attack End:  1632409997.8261614
+---
+Now processing: bird/2008_005649.jpg
+Benign Start:  1632409997.826311
+Labels: ['bird']
+Benign End:  1632409998.0828147
+Attack Start:  1632409998.0828333
+Labels: ['person', 'person', 'person']
+Attack End:  1632409998.875344
+---
+Now processing: bird/2008_000848.jpg
+Benign Start:  1632409998.8754883
+Labels: ['bird']
+Benign End:  1632409999.135057
+Attack Start:  1632409999.135076
+Labels: []
+Attack End:  1632409999.9180925
+---
+Now processing: bird/2008_003439.jpg
+Benign Start:  1632409999.9182432
+Labels: ['bird']
+Benign End:  1632410000.175988
+Attack Start:  1632410000.1760077
+Labels: ['dog']
+Attack End:  1632410000.9622736
+---
+Now processing: bird/2008_005233.jpg
+Benign Start:  1632410000.9624312
+Labels: ['bird']
+Benign End:  1632410001.219187
+Attack Start:  1632410001.2192059
+Labels: ['bird']
+Attack End:  1632410002.0836496
+---
+Now processing: bird/2008_003382.jpg
+Benign Start:  1632410002.083838
+Labels: ['bird']
+Benign End:  1632410002.3433547
+Attack Start:  1632410002.343374
+Labels: ['cat']
+Attack End:  1632410003.1334171
+---
+Now processing: bird/2008_001810.jpg
+Benign Start:  1632410003.1335657
+Labels: ['bird']
+Benign End:  1632410003.3925736
+Attack Start:  1632410003.3925927
+Labels: ['bird']
+Attack End:  1632410004.182263
+---
+Now processing: bird/2008_004384.jpg
+Benign Start:  1632410004.1824102
+Labels: ['chair', 'chair', 'bird']
+Benign End:  1632410004.4515846
+Attack Start:  1632410004.4516034
+Labels: ['person', 'chair', 'sofa']
+Attack End:  1632410005.2486582
+---
+Now processing: bird/2008_004837.jpg
+Benign Start:  1632410005.2488122
+Labels: ['bird']
+Benign End:  1632410005.5051584
+Attack Start:  1632410005.505178
+Labels: []
+Attack End:  1632410006.284602
+---
+Now processing: bird/2008_005774.jpg
+Benign Start:  1632410006.2847598
+Labels: ['bird', 'bird']
+Benign End:  1632410006.5417223
+Attack Start:  1632410006.5417418
+Labels: ['car']
+Attack End:  1632410007.333611
+---
+Now processing: bird/2008_005895.jpg
+Benign Start:  1632410007.3337636
+Labels: ['bird']
+Benign End:  1632410007.5952673
+Attack Start:  1632410007.5952868
+Labels: ['bird']
+Attack End:  1632410008.3855686
+---
+Now processing: bird/2008_004520.jpg
+Benign Start:  1632410008.3857243
+Labels: ['bird']
+Benign End:  1632410008.6439629
+Attack Start:  1632410008.6439824
+Labels: ['cat', 'person']
+Attack End:  1632410009.4379396
+---
+Now processing: bird/2008_004075.jpg
+Benign Start:  1632410009.4380891
+Labels: ['bird']
+Benign End:  1632410009.6932964
+Attack Start:  1632410009.693317
+Labels: ['cat', 'person']
+Attack End:  1632410010.4837887
+---
+Now processing: bird/2008_007266.jpg
+Benign Start:  1632410010.483938
+Labels: ['bird', 'bird', 'cat']
+Benign End:  1632410010.7484932
+Attack Start:  1632410010.7485123
+Labels: ['dog']
+Attack End:  1632410011.5383837
+---
+Now processing: bird/2008_005092.jpg
+Benign Start:  1632410011.5385401
+Labels: ['bird']
+Benign End:  1632410011.7960424
+Attack Start:  1632410011.7960618
+Labels: ['bird']
+Attack End:  1632410012.5843315
+---
+Now processing: bird/2008_006143.jpg
+Benign Start:  1632410012.584482
+Labels: ['bird']
+Benign End:  1632410012.8463764
+Attack Start:  1632410012.8463964
+Labels: ['person', 'person', 'bicycle']
+Attack End:  1632410013.650485
+---
+Now processing: bird/2008_007594.jpg
+Benign Start:  1632410013.6506388
+Labels: ['bird', 'bird']
+Benign End:  1632410013.9127588
+Attack Start:  1632410013.9127798
+Labels: []
+Attack End:  1632410014.7004535
+---
+Now processing: bird/2008_002207.jpg
+Benign Start:  1632410014.7006128
+Labels: ['bird', 'bird', 'bird', 'bird']
+Benign End:  1632410015.0444288
+Attack Start:  1632410015.0444493
+Labels: ['bird', 'person']
+Attack End:  1632410015.8343663
+---
+Now processing: bird/2008_005601.jpg
+Benign Start:  1632410015.834515
+Labels: ['dog', 'bird', 'bird']
+Benign End:  1632410016.1032486
+Attack Start:  1632410016.103267
+Labels: ['bicycle']
+Attack End:  1632410016.9027598
+---
+Now processing: bird/2008_006227.jpg
+Benign Start:  1632410016.902911
+Labels: ['bird', 'bird', 'bird', 'bird', 'bird', 'bird', 'bird']
+Benign End:  1632410017.1847112
+Attack Start:  1632410017.1847293
+Labels: ['bird', 'bird', 'bird', 'bird', 'bird', 'bird', 'sheep']
+Attack End:  1632410017.9979653
+---
+Now processing: bird/2008_002847.jpg
+Benign Start:  1632410017.998145
+Labels: ['bird', 'bird', 'bird', 'bird', 'bird', 'bird', 'bird']
+Benign End:  1632410018.2776377
+Attack Start:  1632410018.2776558
+Labels: ['dog', 'dog', 'dog']
+Attack End:  1632410019.0772765
+---
+Now processing: bird/2008_004689.jpg
+Benign Start:  1632410019.0774217
+Labels: ['bird']
+Benign End:  1632410019.3360999
+Attack Start:  1632410019.3361197
+Labels: ['bird']
+Attack End:  1632410020.1252134
+---
+Now processing: bird/2008_002624.jpg
+Benign Start:  1632410020.1253655
+Labels: ['bird']
+Benign End:  1632410020.3828332
+Attack Start:  1632410020.3828619
+Labels: []
+Attack End:  1632410021.1684408
+---
+Now processing: bird/2008_005522.jpg
+Benign Start:  1632410021.1685922
+Labels: ['bird', 'bird', 'bird']
+Benign End:  1632410021.4331882
+Attack Start:  1632410021.4332078
+Labels: ['cat', 'cat']
+Attack End:  1632410022.2272184
+---
+Now processing: bird/2008_004027.jpg
+Benign Start:  1632410022.2273695
+Labels: ['bird']
+Benign End:  1632410022.4845135
+Attack Start:  1632410022.4845328
+Labels: []
+Attack End:  1632410023.2701416
+---
+Now processing: bird/2008_003763.jpg
+Benign Start:  1632410023.2702925
+Labels: ['bird']
+Benign End:  1632410023.5268173
+Attack Start:  1632410023.526837
+Labels: ['person']
+Attack End:  1632410024.3148496
+---
+Now processing: bird/2008_003484.jpg
+Benign Start:  1632410024.3149965
+Labels: ['bird', 'bird']
+Benign End:  1632410024.5775974
+Attack Start:  1632410024.5776172
+Labels: ['person', 'person']
+Attack End:  1632410025.374211
+---
+Now processing: bird/2008_004589.jpg
+Benign Start:  1632410025.3743641
+Labels: ['bird']
+Benign End:  1632410025.6352582
+Attack Start:  1632410025.635277
+Labels: ['dog']
+Attack End:  1632410026.4268
+---
+Now processing: bird/2008_001978.jpg
+Benign Start:  1632410026.4269478
+Labels: ['bird']
+Benign End:  1632410026.6849754
+Attack Start:  1632410026.685004
+Labels: []
+Attack End:  1632410027.4724457
+---
+Now processing: bird/2008_007587.jpg
+Benign Start:  1632410027.4725986
+Labels: ['bird']
+Benign End:  1632410027.8080995
+Attack Start:  1632410027.8081207
+Labels: ['cat', 'bird']
+Attack End:  1632410028.5949583
+---
+Now processing: bird/2008_005687.jpg
+Benign Start:  1632410028.5951076
+Labels: ['bird', 'bird', 'bird', 'bird']
+Benign End:  1632410028.8639066
+Attack Start:  1632410028.8639245
+Labels: ['person', 'dog']
+Attack End:  1632410029.6634834
+---
+Now processing: bird/2008_000960.jpg
+Benign Start:  1632410029.6636353
+Labels: ['bird', 'pottedplant', 'bird', 'bird']
+Benign End:  1632410029.935851
+Attack Start:  1632410029.9358683
+Labels: ['pottedplant']
+Attack End:  1632410030.7321765
+---
+Now processing: bird/2008_002349.jpg
+Benign Start:  1632410030.7323267
+Labels: ['bird', 'bird', 'bird', 'bird']
+Benign End:  1632410031.0013118
+Attack Start:  1632410031.0013294
+Labels: ['dog', 'bird', 'dog']
+Attack End:  1632410031.7975528
+---
+Now processing: bird/2008_004942.jpg
+Benign Start:  1632410031.7976978
+Labels: ['bird', 'bird']
+Benign End:  1632410032.061361
+Attack Start:  1632410032.061381
+Labels: ['bird', 'person']
+Attack End:  1632410032.8551514
+---
+Now processing: bird/2008_001185.jpg
+Benign Start:  1632410032.8553116
+Labels: ['bird']
+Benign End:  1632410033.1190426
+Attack Start:  1632410033.1190617
+Labels: ['bird']
+Attack End:  1632410033.909054
+---
+Now processing: bird/2008_005182.jpg
+Benign Start:  1632410033.909211
+Labels: ['bird', 'bottle', 'person']
+Benign End:  1632410034.177967
+Attack Start:  1632410034.1779845
+Labels: ['tvmonitor', 'bus', 'person']
+Attack End:  1632410034.9755785
+---
+Now processing: bird/2008_004730.jpg
+Benign Start:  1632410034.975735
+Labels: ['bird']
+Benign End:  1632410035.2327592
+Attack Start:  1632410035.2327783
+Labels: ['bird']
+Attack End:  1632410036.0177286
+---
+Now processing: bird/2008_002043.jpg
+Benign Start:  1632410036.0178847
+Labels: ['bird']
+Benign End:  1632410036.2743514
+Attack Start:  1632410036.274371
+Labels: ['person']
+Attack End:  1632410037.059105
+---
+Now processing: bird/2008_001415.jpg
+Benign Start:  1632410037.0592542
+Labels: ['bird', 'bird']
+Benign End:  1632410037.3199654
+Attack Start:  1632410037.3199856
+Labels: []
+Attack End:  1632410038.1077957
+---
+Now processing: bird/2008_001120.jpg
+Benign Start:  1632410038.1079464
+Labels: ['bird']
+Benign End:  1632410038.3643007
+Attack Start:  1632410038.3643203
+Labels: ['aeroplane']
+Attack End:  1632410039.1566544
+---
+Now processing: bird/2008_002429.jpg
+Benign Start:  1632410039.156807
+Labels: ['bird']
+Benign End:  1632410039.4164023
+Attack Start:  1632410039.416422
+Labels: ['bird', 'cat']
+Attack End:  1632410040.208718
+---
+Now processing: bird/2008_000697.jpg
+Benign Start:  1632410040.2088678
+Labels: ['bird']
+Benign End:  1632410040.4675531
+Attack Start:  1632410040.4675727
+Labels: []
+Attack End:  1632410041.3267941
+---
+Now processing: bird/2008_006503.jpg
+Benign Start:  1632410041.3269835
+Labels: ['bird', 'bird']
+Benign End:  1632410041.5880933
+Attack Start:  1632410041.5881116
+Labels: ['bird', 'bird']
+Attack End:  1632410042.3874073
+---
+Now processing: bird/2008_000532.jpg
+Benign Start:  1632410042.3875594
+Labels: ['bird']
+Benign End:  1632410042.6550689
+Attack Start:  1632410042.655088
+Labels: []
+Attack End:  1632410043.440525
+---
+Now processing: bird/2008_001264.jpg
+Benign Start:  1632410043.440687
+Labels: ['bird']
+Benign End:  1632410043.6992702
+Attack Start:  1632410043.6992884
+Labels: ['person']
+Attack End:  1632410044.4916306
+---
+Now processing: bird/2008_003694.jpg
+Benign Start:  1632410044.4917803
+Labels: ['bird', 'bird']
+Benign End:  1632410044.75475
+Attack Start:  1632410044.7547688
+Labels: ['cat']
+Attack End:  1632410045.5459483
+---
+Now processing: bird/2008_004317.jpg
+Benign Start:  1632410045.5460978
+Labels: ['bird']
+Benign End:  1632410045.8044903
+Attack Start:  1632410045.8045094
+Labels: ['cat']
+Attack End:  1632410046.5993757
+---
+Now processing: bird/2008_004103.jpg
+Benign Start:  1632410046.5995338
+Labels: ['bird', 'bird', 'bird']
+Benign End:  1632410046.8684552
+Attack Start:  1632410046.8684807
+Labels: []
+Attack End:  1632410047.6574259
+---
+Now processing: bird/2008_003161.jpg
+Benign Start:  1632410047.6576107
+Labels: ['bird']
+Benign End:  1632410047.913328
+Attack Start:  1632410047.913347
+Labels: ['person']
+Attack End:  1632410048.701617
+---
+Now processing: bird/2008_006002.jpg
+Benign Start:  1632410048.7017653
+Labels: ['bird', 'bird']
+Benign End:  1632410048.9614768
+Attack Start:  1632410048.9614956
+Labels: ['sofa', 'cat']
+Attack End:  1632410049.7554324
+---
+Now processing: bird/2008_004105.jpg
+Benign Start:  1632410049.7555826
+Labels: ['bird', 'person']
+Benign End:  1632410050.0227275
+Attack Start:  1632410050.0227466
+Labels: ['person', 'chair']
+Attack End:  1632410050.8173337
+---
+Now processing: bird/2008_006058.jpg
+Benign Start:  1632410050.8174832
+Labels: ['bird', 'bird']
+Benign End:  1632410051.0805326
+Attack Start:  1632410051.080552
+Labels: ['bird']
+Attack End:  1632410051.8721602
+---
+Now processing: bird/2008_003170.jpg
+Benign Start:  1632410051.8723085
+Labels: ['bird']
+Benign End:  1632410052.134867
+Attack Start:  1632410052.1348872
+Labels: ['bird']
+Attack End:  1632410052.922149
+---
+Now processing: bird/2008_003232.jpg
+Benign Start:  1632410052.9222963
+Labels: ['bird']
+Benign End:  1632410053.1808126
+Attack Start:  1632410053.1808317
+Labels: ['cat']
+Attack End:  1632410053.9679136
+---
+Now processing: bird/2008_004633.jpg
+Benign Start:  1632410053.9680629
+Labels: ['bird']
+Benign End:  1632410054.228003
+Attack Start:  1632410054.2280216
+Labels: []
+Attack End:  1632410055.0911639
+---
+Now processing: bird/2008_005096.jpg
+Benign Start:  1632410055.0913546
+Labels: ['bird']
+Benign End:  1632410055.3533819
+Attack Start:  1632410055.3534002
+Labels: ['dog', 'chair', 'cat', 'sofa']
+Attack End:  1632410056.153787
+---
+Now processing: bird/2008_007498.jpg
+Benign Start:  1632410056.1539302
+Labels: ['bird']
+Benign End:  1632410056.4121764
+Attack Start:  1632410056.4121962
+Labels: []
+Attack End:  1632410057.1982753
+---
+Now processing: bird/2008_003580.jpg
+Benign Start:  1632410057.1984284
+Labels: ['bird', 'bird', 'bird']
+Benign End:  1632410057.4608085
+Attack Start:  1632410057.460827
+Labels: ['person', 'cat', 'chair']
+Attack End:  1632410058.2641468
+---
+Now processing: bird/2008_006997.jpg
+Benign Start:  1632410058.264304
+Labels: ['bird', 'bird']
+Benign End:  1632410058.5276427
+Attack Start:  1632410058.5276613
+Labels: ['bird']
+Attack End:  1632410059.3264277
+---
+Now processing: bird/2008_003110.jpg
+Benign Start:  1632410059.3265765
+Labels: ['bird', 'bird', 'bird', 'bird']
+Benign End:  1632410059.596225
+Attack Start:  1632410059.5962424
+Labels: ['bird', 'bird', 'bird', 'bird']
+Attack End:  1632410060.4057655
+---
+Now processing: bird/2008_000054.jpg
+Benign Start:  1632410060.4059134
+Labels: ['bird', 'bird']
+Benign End:  1632410060.6634166
+Attack Start:  1632410060.6634357
+Labels: []
+Attack End:  1632410061.452549
+---
+Now processing: bird/2008_007120.jpg
+Benign Start:  1632410061.4527044
+Labels: ['bird']
+Benign End:  1632410061.7096794
+Attack Start:  1632410061.7096996
+Labels: ['person']
+Attack End:  1632410062.503061
+---
+Now processing: bird/2008_002684.jpg
+Benign Start:  1632410062.5032113
+Labels: ['bird']
+Benign End:  1632410062.7602425
+Attack Start:  1632410062.7602627
+Labels: ['dog', 'person']
+Attack End:  1632410063.5539172
+---
+Now processing: bird/2008_003789.jpg
+Benign Start:  1632410063.5540717
+Labels: ['bird', 'bird']
+Benign End:  1632410063.820285
+Attack Start:  1632410063.8203049
+Labels: ['person', 'cat']
+Attack End:  1632410064.6140127
+---
+Now processing: bird/2008_000339.jpg
+Benign Start:  1632410064.614173
+Labels: ['bird', 'bird', 'bird']
+Benign End:  1632410064.8772473
+Attack Start:  1632410064.8772664
+Labels: ['bird', 'motorbike']
+Attack End:  1632410065.6679392
+---
+Now processing: bird/2008_007317.jpg
+Benign Start:  1632410065.6680846
+Labels: ['bird']
+Benign End:  1632410065.9289281
+Attack Start:  1632410065.9289474
+Labels: ['dog']
+Attack End:  1632410066.7173293
+---
+Now processing: bird/2008_005208.jpg
+Benign Start:  1632410066.7174792
+Labels: []
+Benign End:  1632410066.9660041
+Attack Start:  1632410066.966024
+too many indices for array: array is 1-dimensional, but 2 were indexed
+Exception processing bird/2008_005208.jpg
+---
+Now processing: bird/2008_005734.jpg
+Benign Start:  1632410067.1544871
+Labels: ['bird']
+Benign End:  1632410067.4101489
+Attack Start:  1632410067.410169
+Labels: []
+Attack End:  1632410068.2707539
+---
+Now processing: bird/2008_007434.jpg
+Benign Start:  1632410068.2709408
+Labels: ['bird', 'bird']
+Benign End:  1632410068.5359824
+Attack Start:  1632410068.5360014
+Labels: ['bird', 'person']
+Attack End:  1632410069.3313558
+---
+Now processing: bird/2008_001514.jpg
+Benign Start:  1632410069.3315182
+Labels: ['bird']
+Benign End:  1632410069.5943983
+Attack Start:  1632410069.594417
+Labels: ['person', 'dog']
+Attack End:  1632410070.3928885
+---
+Now processing: bird/2008_004766.jpg
+Benign Start:  1632410070.393129
+Labels: ['bird']
+Benign End:  1632410070.6540573
+Attack Start:  1632410070.654076
+Labels: ['bird']
+Attack End:  1632410071.4452362
+---
+Now processing: bird/2008_000123.jpg
+Benign Start:  1632410071.4453912
+Labels: ['bird', 'bird']
+Benign End:  1632410071.7047281
+Attack Start:  1632410071.7047467
+Labels: ['bird']
+Attack End:  1632410072.5006378
+---
+Now processing: bird/2008_004234.jpg
+Benign Start:  1632410072.5007896
+Labels: ['bird']
+Benign End:  1632410072.757371
+Attack Start:  1632410072.75739
+Labels: []
+Attack End:  1632410073.5475855
+---
+Now processing: bird/2008_007250.jpg
+Benign Start:  1632410073.547768
+Labels: ['bird', 'bird']
+Benign End:  1632410073.8111346
+Attack Start:  1632410073.8111527
+Labels: ['cat', 'cat', 'dog']
+Attack End:  1632410074.6148014
+---
+Now processing: bird/2008_001966.jpg
+Benign Start:  1632410074.614969
+Labels: ['bird', 'pottedplant']
+Benign End:  1632410074.8789885
+Attack Start:  1632410074.8790076
+Labels: ['cow']
+Attack End:  1632410075.6765618
+---
+Now processing: bird/2008_003524.jpg
+Benign Start:  1632410075.6767173
+Labels: ['bird']
+Benign End:  1632410075.932973
+Attack Start:  1632410075.9329994
+Labels: ['bird']
+Attack End:  1632410076.7216263
+---
+Now processing: dog/2008_000956.jpg
+Benign Start:  1632410076.72197
+Labels: ['dog']
+Benign End:  1632410076.983036
+Attack Start:  1632410076.983056
+Labels: ['person']
+Attack End:  1632410077.769432
+---
+Now processing: dog/2008_003801.jpg
+Benign Start:  1632410077.7696688
+Labels: ['dog', 'person', 'dog']
+Benign End:  1632410078.0342202
+Attack Start:  1632410078.0342395
+Labels: ['person', 'person', 'horse']
+Attack End:  1632410078.8315706
+---
+Now processing: dog/2008_000078.jpg
+Benign Start:  1632410078.8317165
+Labels: ['dog']
+Benign End:  1632410079.094072
+Attack Start:  1632410079.0940914
+Labels: ['person', 'person', 'chair']
+Attack End:  1632410079.887269
+---
+Now processing: dog/2008_004702.jpg
+Benign Start:  1632410079.8874815
+Labels: ['dog', 'chair', 'person']
+Benign End:  1632410080.153858
+Attack Start:  1632410080.153878
+Labels: []
+Attack End:  1632410080.9359283
+---
+Now processing: dog/2008_000943.jpg
+Benign Start:  1632410080.9360802
+Labels: ['dog']
+Benign End:  1632410081.2666373
+Attack Start:  1632410081.2666588
+Labels: ['person']
+Attack End:  1632410082.0523083
+---
+Now processing: dog/2008_000080.jpg
+Benign Start:  1632410082.0524597
+Labels: ['dog']
+Benign End:  1632410082.3122323
+Attack Start:  1632410082.3122509
+Labels: ['sofa', 'dog', 'person']
+Attack End:  1632410083.1127796
+---
+Now processing: dog/2008_003576.jpg
+Benign Start:  1632410083.1129248
+Labels: ['dog']
+Benign End:  1632410083.3716292
+Attack Start:  1632410083.3716486
+Labels: ['person', 'dog']
+Attack End:  1632410084.1655746
+---
+Now processing: dog/2008_000863.jpg
+Benign Start:  1632410084.165731
+Labels: ['dog', 'chair']
+Benign End:  1632410084.4299953
+Attack Start:  1632410084.4300146
+Labels: ['person', 'dog']
+Attack End:  1632410085.229365
+---
+Now processing: dog/2008_003607.jpg
+Benign Start:  1632410085.229525
+Labels: ['dog', 'dog', 'cat', 'sofa']
+Benign End:  1632410085.4998322
+Attack Start:  1632410085.4998507
+Labels: ['chair', 'dog', 'chair', 'dog', 'dog']
+Attack End:  1632410086.3101192
+---
+Now processing: dog/2008_001965.jpg
+Benign Start:  1632410086.3102717
+Labels: ['dog', 'person', 'person', 'person']
+Benign End:  1632410086.5802097
+Attack Start:  1632410086.5802279
+Labels: ['person', 'horse']
+Attack End:  1632410087.3908048
+---
+Now processing: dog/2008_000059.jpg
+Benign Start:  1632410087.3909614
+Labels: ['person', 'dog']
+Benign End:  1632410087.6593878
+Attack Start:  1632410087.6594067
+Labels: ['car']
+Attack End:  1632410088.4636106
+---
+Now processing: dog/2008_003238.jpg
+Benign Start:  1632410088.4637582
+Labels: ['person', 'dog']
+Benign End:  1632410088.728814
+Attack Start:  1632410088.7288342
+Labels: ['person']
+Attack End:  1632410089.5273526
+---
+Now processing: dog/2008_001070.jpg
+Benign Start:  1632410089.5275085
+Labels: ['dog']
+Benign End:  1632410089.783204
+Attack Start:  1632410089.7832239
+Labels: []
+Attack End:  1632410090.5739121
+---
+Now processing: dog/2008_000183.jpg
+Benign Start:  1632410090.5740626
+Labels: ['dog']
+Benign End:  1632410090.8280962
+Attack Start:  1632410090.828116
+Labels: ['person']
+Attack End:  1632410091.6246266
+---
+Now processing: dog/2008_004662.jpg
+Benign Start:  1632410091.6247745
+Labels: ['dog', 'dog', 'sofa']
+Benign End:  1632410091.8941176
+Attack Start:  1632410091.8941371
+Labels: ['chair', 'chair', 'diningtable', 'person']
+Attack End:  1632410092.7001126
+---
+Now processing: dog/2008_002494.jpg
+Benign Start:  1632410092.7002597
+Labels: ['person', 'dog', 'person']
+Benign End:  1632410092.966017
+Attack Start:  1632410092.966035
+Labels: ['person', 'person']
+Attack End:  1632410093.764015
+---
+Now processing: dog/2008_003133.jpg
+Benign Start:  1632410093.764162
+Labels: ['dog', 'dog']
+Benign End:  1632410094.0999491
+Attack Start:  1632410094.0999687
+Labels: ['dog', 'chair', 'dog', 'chair']
+Attack End:  1632410094.9033628
+---
+Now processing: dog/2008_000897.jpg
+Benign Start:  1632410094.9035103
+Labels: ['dog']
+Benign End:  1632410095.1619961
+Attack Start:  1632410095.1620166
+Labels: []
+Attack End:  1632410095.9534268
+---
+Now processing: dog/2008_002408.jpg
+Benign Start:  1632410095.953617
+Labels: ['dog', 'dog']
+Benign End:  1632410096.2210941
+Attack Start:  1632410096.2211137
+Labels: ['sheep', 'sheep']
+Attack End:  1632410097.0232203
+---
+Now processing: dog/2008_000268.jpg
+Benign Start:  1632410097.023383
+Labels: ['person', 'dog', 'person']
+Benign End:  1632410097.2885463
+Attack Start:  1632410097.288567
+Labels: ['person', 'person']
+Attack End:  1632410098.0903614
+---
+Now processing: dog/2008_004653.jpg
+Benign Start:  1632410098.0905166
+Labels: ['dog']
+Benign End:  1632410098.350153
+Attack Start:  1632410098.3501725
+Labels: ['bird']
+Attack End:  1632410099.1495094
+---
+Now processing: dog/2008_001248.jpg
+Benign Start:  1632410099.149666
+Labels: ['person', 'dog']
+Benign End:  1632410099.4117615
+Attack Start:  1632410099.4117804
+Labels: ['person']
+Attack End:  1632410100.2147658
+---
+Now processing: dog/2008_001456.jpg
+Benign Start:  1632410100.2149167
+Labels: ['dog', 'dog']
+Benign End:  1632410100.4748018
+Attack Start:  1632410100.4748204
+Labels: ['cat']
+Attack End:  1632410101.2727034
+---
+Now processing: dog/2008_003443.jpg
+Benign Start:  1632410101.2728546
+Labels: ['dog']
+Benign End:  1632410101.5287488
+Attack Start:  1632410101.5287678
+Labels: ['chair']
+Attack End:  1632410102.322774
+---
+Now processing: dog/2008_000419.jpg
+Benign Start:  1632410102.3229222
+Labels: ['dog', 'sofa']
+Benign End:  1632410102.5843341
+Attack Start:  1632410102.584353
+Labels: ['chair']
+Attack End:  1632410103.377455
+---
+Now processing: dog/2008_001436.jpg
+Benign Start:  1632410103.377646
+Labels: ['dog']
+Benign End:  1632410103.6368716
+Attack Start:  1632410103.636891
+Labels: ['person', 'bottle']
+Attack End:  1632410104.4430919
+---
+Now processing: dog/2008_000788.jpg
+Benign Start:  1632410104.4432595
+Labels: ['dog']
+Benign End:  1632410104.7031813
+Attack Start:  1632410104.7032008
+Labels: ['horse', 'person']
+Attack End:  1632410105.5016878
+---
+Now processing: dog/2008_004306.jpg
+Benign Start:  1632410105.5018375
+Labels: ['dog']
+Benign End:  1632410105.7556357
+Attack Start:  1632410105.7556562
+Labels: ['cat']
+Attack End:  1632410106.5430715
+---
+Now processing: dog/2008_003838.jpg
+Benign Start:  1632410106.5432222
+Labels: ['dog', 'pottedplant', 'chair', 'chair']
+Benign End:  1632410106.8076086
+Attack Start:  1632410106.8076267
+Labels: ['chair', 'dog']
+Attack End:  1632410107.679376
+---
+Now processing: dog/2008_000270.jpg
+Benign Start:  1632410107.6795456
+Labels: ['person', 'person', 'dog', 'sofa']
+Benign End:  1632410107.948346
+Attack Start:  1632410107.948364
+Labels: ['person', 'person', 'cat', 'person']
+Attack End:  1632410108.758785
+---
+Now processing: dog/2008_004722.jpg
+Benign Start:  1632410108.7589633
+Labels: ['dog']
+Benign End:  1632410109.0222325
+Attack Start:  1632410109.022269
+Labels: ['dog']
+Attack End:  1632410109.8128927
+---
+Now processing: dog/2008_001430.jpg
+Benign Start:  1632410109.8130903
+Labels: ['dog']
+Benign End:  1632410110.0705802
+Attack Start:  1632410110.0706
+Labels: ['person', 'person']
+Attack End:  1632410110.8687866
+---
+Now processing: dog/2008_002936.jpg
+Benign Start:  1632410110.868942
+Labels: ['dog']
+Benign End:  1632410111.1278899
+Attack Start:  1632410111.1279092
+Labels: ['horse']
+Attack End:  1632410111.9195156
+---
+Now processing: dog/2008_001895.jpg
+Benign Start:  1632410111.9196782
+Labels: ['dog', 'person']
+Benign End:  1632410112.1789205
+Attack Start:  1632410112.1789389
+Labels: ['cat']
+Attack End:  1632410112.9792137
+---
+Now processing: dog/2008_004768.jpg
+Benign Start:  1632410112.9793677
+Labels: ['dog']
+Benign End:  1632410113.2396426
+Attack Start:  1632410113.239662
+Labels: ['cat']
+Attack End:  1632410114.035783
+---
+Now processing: dog/2008_003944.jpg
+Benign Start:  1632410114.0359402
+Labels: ['dog', 'dog']
+Benign End:  1632410114.2990282
+Attack Start:  1632410114.2990482
+Labels: ['horse', 'bird']
+Attack End:  1632410115.100017
+---
+Now processing: dog/2008_000026.jpg
+Benign Start:  1632410115.1001647
+Labels: ['person', 'dog']
+Benign End:  1632410115.3592832
+Attack Start:  1632410115.3593016
+Labels: ['person']
+Attack End:  1632410116.1479657
+---
+Now processing: dog/2008_002003.jpg
+Benign Start:  1632410116.1481216
+Labels: ['dog', 'person']
+Benign End:  1632410116.411168
+Attack Start:  1632410116.4112022
+Labels: ['person', 'cat']
+Attack End:  1632410117.2056105
+---
+Now processing: dog/2008_001862.jpg
+Benign Start:  1632410117.205759
+Labels: ['dog', 'chair', 'pottedplant', 'person']
+Benign End:  1632410117.481648
+Attack Start:  1632410117.4816651
+Labels: ['chair', 'cat', 'pottedplant', 'pottedplant']
+Attack End:  1632410118.2851064
+---
+Now processing: dog/2008_002436.jpg
+Benign Start:  1632410118.2852678
+Labels: ['dog', 'person']
+Benign End:  1632410118.545143
+Attack Start:  1632410118.5451612
+Labels: ['person']
+Attack End:  1632410119.3331711
+---
+Now processing: dog/2008_004174.jpg
+Benign Start:  1632410119.3333213
+Labels: ['dog']
+Benign End:  1632410119.5909967
+Attack Start:  1632410119.5910172
+Labels: ['cat']
+Attack End:  1632410120.378429
+---
+Now processing: dog/2008_002610.jpg
+Benign Start:  1632410120.3785775
+Labels: ['person', 'boat', 'dog', 'person', 'cow']
+Benign End:  1632410120.7323723
+Attack Start:  1632410120.7323916
+Labels: ['dog', 'person']
+Attack End:  1632410121.5249295
+---
+Now processing: dog/2008_003755.jpg
+Benign Start:  1632410121.5251675
+Labels: ['car', 'dog', 'person']
+Benign End:  1632410121.7952924
+Attack Start:  1632410121.7953112
+Labels: ['person', 'car', 'person', 'car']
+Attack End:  1632410122.5996404
+---
+Now processing: dog/2008_004760.jpg
+Benign Start:  1632410122.5997853
+Labels: ['dog']
+Benign End:  1632410122.8596003
+Attack Start:  1632410122.85962
+Labels: ['cat', 'chair']
+Attack End:  1632410123.6540475
+---
+Now processing: dog/2008_000661.jpg
+Benign Start:  1632410123.6541958
+Labels: ['dog', 'dog', 'person']
+Benign End:  1632410123.9226077
+Attack Start:  1632410123.922626
+Labels: ['horse', 'person', 'horse']
+Attack End:  1632410124.7274632
+---
+Now processing: dog/2008_001871.jpg
+Benign Start:  1632410124.7276082
+Labels: ['dog']
+Benign End:  1632410124.9814835
+Attack Start:  1632410124.9815032
+Labels: ['person']
+Attack End:  1632410125.77787
+---
+Now processing: dog/2008_004427.jpg
+Benign Start:  1632410125.7780173
+Labels: ['dog']
+Benign End:  1632410126.0387034
+Attack Start:  1632410126.038722
+Labels: []
+Attack End:  1632410126.8292603
+---
+Now processing: dog/2008_004015.jpg
+Benign Start:  1632410126.8294158
+Labels: ['dog', 'dog']
+Benign End:  1632410127.0919704
+Attack Start:  1632410127.0919895
+Labels: ['sheep', 'sheep']
+Attack End:  1632410127.8906593
+---
+Now processing: dog/2008_002598.jpg
+Benign Start:  1632410127.89081
+Labels: ['dog', 'person', 'person']
+Benign End:  1632410128.1554382
+Attack Start:  1632410128.1554556
+Labels: ['person', 'person']
+Attack End:  1632410128.9550128
+---
+Now processing: dog/2008_004833.jpg
+Benign Start:  1632410128.9551694
+Labels: ['dog']
+Benign End:  1632410129.214993
+Attack Start:  1632410129.215012
+Labels: ['dog', 'cat', 'dog', 'person']
+Attack End:  1632410130.0162444
+---
+Now processing: dog/2008_000620.jpg
+Benign Start:  1632410130.0163891
+Labels: ['dog', 'person']
+Benign End:  1632410130.281646
+Attack Start:  1632410130.2816646
+Labels: ['person', 'horse']
+Attack End:  1632410131.075403
+---
+Now processing: dog/2008_000706.jpg
+Benign Start:  1632410131.0755515
+Labels: ['dog', 'person']
+Benign End:  1632410131.3359103
+Attack Start:  1632410131.3359296
+Labels: ['cat', 'dog', 'person']
+Attack End:  1632410132.1281638
+---
+Now processing: dog/2008_001660.jpg
+Benign Start:  1632410132.1283095
+Labels: ['dog', 'person', 'sofa']
+Benign End:  1632410132.392309
+Attack Start:  1632410132.3923285
+Labels: ['person']
+Attack End:  1632410133.1833918
+---
+Now processing: dog/2008_004745.jpg
+Benign Start:  1632410133.1835408
+Labels: ['dog', 'person']
+Benign End:  1632410133.5247746
+Attack Start:  1632410133.5247953
+Labels: ['dog', 'person']
+Attack End:  1632410134.318966
+---
+Now processing: dog/2008_004528.jpg
+Benign Start:  1632410134.3191178
+Labels: ['dog']
+Benign End:  1632410134.5825078
+Attack Start:  1632410134.582527
+Labels: ['person', 'person', 'dog']
+Attack End:  1632410135.3849146
+---
+Now processing: dog/2008_004058.jpg
+Benign Start:  1632410135.3851504
+Labels: ['dog']
+Benign End:  1632410135.649851
+Attack Start:  1632410135.6498713
+Labels: ['dog']
+Attack End:  1632410136.4399788
+---
+Now processing: dog/2008_000690.jpg
+Benign Start:  1632410136.4401314
+Labels: ['dog', 'sofa', 'person']
+Benign End:  1632410136.7051606
+Attack Start:  1632410136.705179
+Labels: ['chair', 'person', 'chair']
+Attack End:  1632410137.5110915
+---
+Now processing: dog/2008_002814.jpg
+Benign Start:  1632410137.5112457
+Labels: ['dog']
+Benign End:  1632410137.776366
+Attack Start:  1632410137.7763858
+Labels: ['cat']
+Attack End:  1632410138.5733426
+---
+Now processing: dog/2008_004402.jpg
+Benign Start:  1632410138.5735645
+Labels: ['dog']
+Benign End:  1632410138.8305712
+Attack Start:  1632410138.8305986
+Labels: ['person']
+Attack End:  1632410139.6266818
+---
+Now processing: dog/2008_003572.jpg
+Benign Start:  1632410139.626843
+Labels: ['dog', 'chair']
+Benign End:  1632410139.8893695
+Attack Start:  1632410139.8893886
+Labels: []
+Attack End:  1632410140.6807458
+---
+Now processing: dog/2008_002267.jpg
+Benign Start:  1632410140.6809006
+Labels: ['dog', 'dog', 'dog']
+Benign End:  1632410140.9437575
+Attack Start:  1632410140.9437766
+Labels: ['bird', 'dog']
+Attack End:  1632410141.7434096
+---
+Now processing: dog/2008_004273.jpg
+Benign Start:  1632410141.7435586
+Labels: ['dog']
+Benign End:  1632410141.9992363
+Attack Start:  1632410141.9992561
+Labels: ['dog', 'diningtable', 'person', 'chair']
+Attack End:  1632410142.802634
+---
+Now processing: dog/2008_000837.jpg
+Benign Start:  1632410142.8027785
+Labels: ['dog', 'person']
+Benign End:  1632410143.064307
+Attack Start:  1632410143.0643256
+Labels: ['person', 'person', 'person']
+Attack End:  1632410143.8572443
+---
+Now processing: dog/2008_002536.jpg
+Benign Start:  1632410143.8574116
+Labels: ['sheep', 'sheep', 'dog']
+Benign End:  1632410144.1207433
+Attack Start:  1632410144.1207614
+Labels: ['sheep', 'dog']
+Attack End:  1632410144.9139843
+---
+Now processing: dog/2008_002904.jpg
+Benign Start:  1632410144.9141304
+Labels: ['dog']
+Benign End:  1632410145.1759543
+Attack Start:  1632410145.175974
+Labels: ['person', 'chair']
+Attack End:  1632410145.9671004
+---
+Now processing: dog/2008_001816.jpg
+Benign Start:  1632410145.967256
+Labels: ['dog', 'sofa']
+Benign End:  1632410146.2263672
+Attack Start:  1632410146.2263954
+Labels: ['person', 'chair']
+Attack End:  1632410147.0968878
+---
+Now processing: dog/2008_002958.jpg
+Benign Start:  1632410147.0970585
+Labels: ['dog', 'car', 'car']
+Benign End:  1632410147.3679326
+Attack Start:  1632410147.3679676
+Labels: ['car', 'dog']
+Attack End:  1632410148.1688848
+---
+Now processing: dog/2008_001379.jpg
+Benign Start:  1632410148.1691613
+Labels: ['dog']
+Benign End:  1632410148.426456
+Attack Start:  1632410148.4264753
+Labels: ['dog']
+Attack End:  1632410149.218337
+---
+Now processing: dog/2008_003511.jpg
+Benign Start:  1632410149.2185013
+Labels: ['dog', 'person']
+Benign End:  1632410149.480462
+Attack Start:  1632410149.4804814
+Labels: ['person']
+Attack End:  1632410150.2748132
+---
+Now processing: dog/2008_002359.jpg
+Benign Start:  1632410150.2749658
+Labels: ['dog', 'dog']
+Benign End:  1632410150.5361028
+Attack Start:  1632410150.536121
+Labels: ['cat', 'sheep', 'bird']
+Attack End:  1632410151.3399663
+---
+Now processing: dog/2008_004647.jpg
+Benign Start:  1632410151.3401215
+Labels: ['person', 'dog']
+Benign End:  1632410151.6055126
+Attack Start:  1632410151.605531
+Labels: ['person', 'sheep']
+Attack End:  1632410152.4062278
+---
+Now processing: dog/2008_001676.jpg
+Benign Start:  1632410152.406373
+Labels: ['dog']
+Benign End:  1632410152.6654124
+Attack Start:  1632410152.6654317
+Labels: ['horse']
+Attack End:  1632410153.4621136
+---
+Now processing: dog/2008_002687.jpg
+Benign Start:  1632410153.4622626
+Labels: ['person', 'dog']
+Benign End:  1632410153.7264588
+Attack Start:  1632410153.7264779
+Labels: ['chair', 'cat', 'chair']
+Attack End:  1632410154.530475
+---
+Now processing: dog/2008_002239.jpg
+Benign Start:  1632410154.5306268
+Labels: ['dog']
+Benign End:  1632410154.788124
+Attack Start:  1632410154.7881439
+Labels: ['person', 'dog']
+Attack End:  1632410155.5837965
+---
+Now processing: dog/2008_000138.jpg
+Benign Start:  1632410155.5839572
+Labels: ['dog', 'person', 'person', 'person']
+Benign End:  1632410155.855658
+Attack Start:  1632410155.855676
+Labels: ['pottedplant']
+Attack End:  1632410156.648392
+---
+Now processing: dog/2008_002992.jpg
+Benign Start:  1632410156.6485484
+Labels: ['person', 'dog']
+Benign End:  1632410156.909462
+Attack Start:  1632410156.9094808
+Labels: ['person', 'cat', 'cat']
+Attack End:  1632410157.7054067
+---
+Now processing: dog/2008_004525.jpg
+Benign Start:  1632410157.7055588
+Labels: ['dog']
+Benign End:  1632410157.967447
+Attack Start:  1632410157.967467
+Labels: ['dog']
+Attack End:  1632410158.7570565
+---
+Now processing: dog/2008_004498.jpg
+Benign Start:  1632410158.7572083
+Labels: ['dog', 'dog']
+Benign End:  1632410159.0156116
+Attack Start:  1632410159.015631
+Labels: []
+Attack End:  1632410159.8004823
+---
+Now processing: dog/2008_004188.jpg
+Benign Start:  1632410159.8006344
+Labels: ['person', 'person', 'dog', 'person', 'person', 'person']
+Benign End:  1632410160.1562188
+Attack Start:  1632410160.1562386
+Labels: ['person', 'person', 'person', 'person', 'person']
+Attack End:  1632410160.9634714
+---
+Now processing: dog/2008_003374.jpg
+Benign Start:  1632410160.963629
+Labels: ['dog']
+Benign End:  1632410161.215065
+Attack Start:  1632410161.2150848
+Labels: ['bird']
+Attack End:  1632410162.0046563
+---
+Now processing: dog/2008_004121.jpg
+Benign Start:  1632410162.0048084
+Labels: ['dog']
+Benign End:  1632410162.26126
+Attack Start:  1632410162.2612796
+Labels: ['dog', 'cat']
+Attack End:  1632410163.0536087
+---
+Now processing: dog/2008_002037.jpg
+Benign Start:  1632410163.0537632
+Labels: ['person', 'person', 'person']
+Benign End:  1632410163.3182402
+Attack Start:  1632410163.3182585
+Labels: ['dog', 'person']
+Attack End:  1632410164.1172192
+---
+Now processing: dog/2008_002395.jpg
+Benign Start:  1632410164.117378
+Labels: ['dog']
+Benign End:  1632410164.3771796
+Attack Start:  1632410164.3771992
+Labels: []
+Attack End:  1632410165.1674106
+---
+Now processing: dog/2008_002430.jpg
+Benign Start:  1632410165.1675973
+Labels: ['dog', 'sheep', 'sheep', 'sheep']
+Benign End:  1632410165.4368994
+Attack Start:  1632410165.4369173
+Labels: ['person', 'cow', 'dog', 'dog']
+Attack End:  1632410166.2451785
+---
+Now processing: dog/2008_004695.jpg
+Benign Start:  1632410166.2453253
+Labels: ['dog']
+Benign End:  1632410166.5056965
+Attack Start:  1632410166.505716
+Labels: ['diningtable']
+Attack End:  1632410167.299207
+---
+Now processing: dog/2008_002036.jpg
+Benign Start:  1632410167.299355
+Labels: ['person']
+Benign End:  1632410167.5566545
+Attack Start:  1632410167.5566733
+Labels: ['person']
+Attack End:  1632410168.3520777
+---
+Now processing: dog/2008_003799.jpg
+Benign Start:  1632410168.352228
+Labels: ['dog']
+Benign End:  1632410168.6163795
+Attack Start:  1632410168.6163983
+Labels: ['bird']
+Attack End:  1632410169.409171
+---
+Now processing: dog/2008_002859.jpg
+Benign Start:  1632410169.4093251
+Labels: ['dog']
+Benign End:  1632410169.6666079
+Attack Start:  1632410169.666628
+Labels: ['chair']
+Attack End:  1632410170.4532804
+---
+Now processing: dog/2008_003331.jpg
+Benign Start:  1632410170.453428
+Labels: ['dog']
+Benign End:  1632410170.7109563
+Attack Start:  1632410170.7109756
+Labels: []
+Attack End:  1632410171.4957633
+---
+Now processing: dog/2008_003718.jpg
+Benign Start:  1632410171.4959152
+Labels: ['dog']
+Benign End:  1632410171.7564645
+Attack Start:  1632410171.756484
+Labels: ['horse']
+Attack End:  1632410172.5466998
+---
+Now processing: dog/2008_004297.jpg
+Benign Start:  1632410172.54685
+Labels: ['tvmonitor', 'dog', 'chair', 'cat', 'chair', 'dog']
+Benign End:  1632410172.8245714
+Attack Start:  1632410172.8245895
+Labels: ['person', 'dog', 'sofa', 'diningtable', 'dog']
+Attack End:  1632410173.7153213
+---
+Now processing: dog/2008_000931.jpg
+Benign Start:  1632410173.715485
+Labels: ['dog']
+Benign End:  1632410173.9740598
+Attack Start:  1632410173.9740784
+Labels: ['horse']
+Attack End:  1632410174.7680852
+---
+Now processing: dog/2008_003286.jpg
+Benign Start:  1632410174.7682374
+Labels: ['dog', 'sofa', 'person', 'sofa', 'sofa']
+Benign End:  1632410175.046913
+Attack Start:  1632410175.0469322
+Labels: ['person', 'person']
+Attack End:  1632410175.8431551
+---
+Now processing: dog/2008_001478.jpg
+Benign Start:  1632410175.8433
+Labels: ['dog']
+Benign End:  1632410176.1005077
+Attack Start:  1632410176.1005282
+Labels: []
+Attack End:  1632410176.8907723
+---
+Now processing: dog/2008_004324.jpg
+Benign Start:  1632410176.8909333
+Labels: ['dog']
+Benign End:  1632410177.1464837
+Attack Start:  1632410177.1465037
+Labels: ['chair', 'cat']
+Attack End:  1632410177.9456902
+---
+Now processing: dog/2008_002084.jpg
+Benign Start:  1632410177.9458368
+Labels: ['person', 'person', 'dog']
+Benign End:  1632410178.212913
+Attack Start:  1632410178.212931
+Labels: ['person', 'person', 'dog']
+Attack End:  1632410179.0178618
+---
+Now processing: dog/2008_004774.jpg
+Benign Start:  1632410179.0180109
+Labels: ['person', 'sofa', 'dog', 'dog']
+Benign End:  1632410179.2867887
+Attack Start:  1632410179.286807
+Labels: ['person', 'chair', 'dog', 'dog']
+Attack End:  1632410180.095414
+---
+Now processing: dog/2008_000239.jpg
+Benign Start:  1632410180.095601
+Labels: ['dog']
+Benign End:  1632410180.3543096
+Attack Start:  1632410180.3543293
+Labels: ['sheep', 'dog', 'person']
+Attack End:  1632410181.159608
+---
+Now processing: dog/2008_001410.jpg
+Benign Start:  1632410181.1597521
+Labels: ['dog']
+Benign End:  1632410181.4196143
+Attack Start:  1632410181.419634
+Labels: ['dog']
+Attack End:  1632410182.2090888
+---
+Now processing: dog/2008_001220.jpg
+Benign Start:  1632410182.2092366
+Labels: ['dog', 'dog']
+Benign End:  1632410182.469099
+Attack Start:  1632410182.4691184
+Labels: ['person']
+Attack End:  1632410183.2591105
+---
+Now processing: person/2008_000246.jpg
+Benign Start:  1632410183.259444
+Labels: ['person', 'chair']
+Benign End:  1632410183.5217009
+Attack Start:  1632410183.5217366
+Labels: ['person', 'person', 'bicycle', 'person']
+Attack End:  1632410184.3237143
+---
+Now processing: person/2008_000622.jpg
+Benign Start:  1632410184.323857
+Labels: ['person']
+Benign End:  1632410184.5827572
+Attack Start:  1632410184.5827768
+Labels: ['person']
+Attack End:  1632410185.3721118
+---
+Now processing: person/2008_000243.jpg
+Benign Start:  1632410185.3722637
+Labels: ['person', 'person']
+Benign End:  1632410185.6339164
+Attack Start:  1632410185.6339357
+Labels: ['dog', 'train']
+Attack End:  1632410186.5057118
+---
+Now processing: person/2008_000511.jpg
+Benign Start:  1632410186.505882
+Labels: ['person', 'person']
+Benign End:  1632410186.772073
+Attack Start:  1632410186.7720919
+Labels: ['person', 'person']
+Attack End:  1632410187.5689135
+---
+Now processing: person/2008_000535.jpg
+Benign Start:  1632410187.5691402
+Labels: ['person', 'person', 'person']
+Benign End:  1632410187.833809
+Attack Start:  1632410187.8338277
+Labels: ['person', 'person']
+Attack End:  1632410188.6299345
+---
+Now processing: person/2008_000261.jpg
+Benign Start:  1632410188.6300836
+Labels: ['person', 'bottle']
+Benign End:  1632410188.892848
+Attack Start:  1632410188.8928664
+Labels: ['person', 'bottle']
+Attack End:  1632410189.6916926
+---
+Now processing: person/2008_000623.jpg
+Benign Start:  1632410189.6918385
+Labels: ['person']
+Benign End:  1632410189.9510055
+Attack Start:  1632410189.9510245
+Labels: ['person', 'pottedplant']
+Attack End:  1632410190.7480826
+---
+Now processing: person/2008_000475.jpg
+Benign Start:  1632410190.7482557
+Labels: ['person', 'person', 'person']
+Benign End:  1632410191.0096316
+Attack Start:  1632410191.0096498
+Labels: ['person', 'person', 'person']
+Attack End:  1632410191.8141336
+---
+Now processing: person/2008_000656.jpg
+Benign Start:  1632410191.8142822
+Labels: ['person']
+Benign End:  1632410192.0708647
+Attack Start:  1632410192.070885
+Labels: ['chair']
+Attack End:  1632410192.8651125
+---
+Now processing: person/2008_000003.jpg
+Benign Start:  1632410192.8652647
+Labels: ['train', 'person']
+Benign End:  1632410193.1258569
+Attack Start:  1632410193.1258755
+Labels: []
+Attack End:  1632410193.9200296
+---
+Now processing: person/2008_000383.jpg
+Benign Start:  1632410193.9201818
+Labels: ['person', 'person', 'person', 'person', 'person', 'tvmonitor']
+Benign End:  1632410194.1966574
+Attack Start:  1632410194.1966755
+Labels: ['person', 'car']
+Attack End:  1632410194.99852
+---
+Now processing: person/2008_000328.jpg
+Benign Start:  1632410194.9986796
+Labels: ['motorbike', 'person']
+Benign End:  1632410195.2607968
+Attack Start:  1632410195.2608159
+Labels: ['person']
+Attack End:  1632410196.0493689
+---
+Now processing: person/2008_000573.jpg
+Benign Start:  1632410196.04952
+Labels: ['person', 'person', 'person', 'diningtable']
+Benign End:  1632410196.3175755
+Attack Start:  1632410196.3175933
+Labels: ['person', 'dog', 'person']
+Attack End:  1632410197.1164758
+---
+Now processing: person/2008_000647.jpg
+Benign Start:  1632410197.1166308
+Labels: ['person', 'person']
+Benign End:  1632410197.3816082
+Attack Start:  1632410197.3816268
+Labels: ['person', 'chair', 'person']
+Attack End:  1632410198.1807673
+---
+Now processing: person/2008_000194.jpg
+Benign Start:  1632410198.1809125
+Labels: ['bicycle', 'person']
+Benign End:  1632410198.4466565
+Attack Start:  1632410198.446676
+Labels: ['person']
+Attack End:  1632410199.313615
+---
+Now processing: person/2008_000489.jpg
+Benign Start:  1632410199.3137934
+Labels: ['person', 'chair']
+Benign End:  1632410199.5750926
+Attack Start:  1632410199.5751114
+Labels: ['person', 'person', 'car']
+Attack End:  1632410200.3790717
+---
+Now processing: person/2008_000268.jpg
+Benign Start:  1632410200.3792171
+Labels: ['person', 'dog', 'person']
+Benign End:  1632410200.6455572
+Attack Start:  1632410200.6455755
+Labels: ['person', 'person']
+Attack End:  1632410201.4400644
+---
+Now processing: person/2008_000233.jpg
+Benign Start:  1632410201.4402173
+Labels: ['person']
+Benign End:  1632410201.6961648
+Attack Start:  1632410201.6961846
+Labels: ['person']
+Attack End:  1632410202.491007
+---
+Now processing: person/2008_000564.jpg
+Benign Start:  1632410202.4911556
+Labels: ['pottedplant']
+Benign End:  1632410202.7525837
+Attack Start:  1632410202.752603
+Labels: []
+Attack End:  1632410203.5430696
+---
+Now processing: person/2008_000652.jpg
+Benign Start:  1632410203.5432243
+Labels: ['person']
+Benign End:  1632410203.7958622
+Attack Start:  1632410203.7958817
+Labels: ['person']
+Attack End:  1632410204.5929227
+---
+Now processing: person/2008_000376.jpg
+Benign Start:  1632410204.593119
+Labels: ['person', 'person']
+Benign End:  1632410204.8535664
+Attack Start:  1632410204.8535845
+Labels: ['person', 'car']
+Attack End:  1632410205.6549861
+---
+Now processing: person/2008_000519.jpg
+Benign Start:  1632410205.6551669
+Labels: ['person', 'sofa']
+Benign End:  1632410205.9173868
+Attack Start:  1632410205.9174054
+Labels: ['person', 'chair']
+Attack End:  1632410206.7213998
+---
+Now processing: person/2008_000496.jpg
+Benign Start:  1632410206.7215507
+Labels: ['person']
+Benign End:  1632410206.9821048
+Attack Start:  1632410206.9821243
+Labels: ['person']
+Attack End:  1632410207.7741034
+---
+Now processing: person/2008_000213.jpg
+Benign Start:  1632410207.7742522
+Labels: ['person']
+Benign End:  1632410208.0322852
+Attack Start:  1632410208.0323043
+Labels: ['person']
+Attack End:  1632410208.819486
+---
+Now processing: person/2008_000398.jpg
+Benign Start:  1632410208.8196337
+Labels: ['person', 'person', 'bottle']
+Benign End:  1632410209.0799835
+Attack Start:  1632410209.080002
+Labels: ['person', 'person']
+Attack End:  1632410209.8728526
+---
+Now processing: person/2008_000406.jpg
+Benign Start:  1632410209.873054
+Labels: ['person']
+Benign End:  1632410210.1344655
+Attack Start:  1632410210.134485
+Labels: ['person']
+Attack End:  1632410210.9264007
+---
+Now processing: person/2008_000522.jpg
+Benign Start:  1632410210.9265544
+Labels: ['bottle', 'person']
+Benign End:  1632410211.1896656
+Attack Start:  1632410211.1896842
+Labels: ['person']
+Attack End:  1632410211.9792628
+---
+Now processing: person/2008_000634.jpg
+Benign Start:  1632410211.9794135
+Labels: ['person']
+Benign End:  1632410212.3134654
+Attack Start:  1632410212.313487
+Labels: ['person']
+Attack End:  1632410213.1015034
+---
+Now processing: person/2008_000423.jpg
+Benign Start:  1632410213.1016536
+Labels: ['person', 'person', 'boat']
+Benign End:  1632410213.3709323
+Attack Start:  1632410213.370952
+Labels: ['person', 'person']
+Attack End:  1632410214.1668253
+---
+Now processing: person/2008_000270.jpg
+Benign Start:  1632410214.166971
+Labels: ['person', 'person', 'dog', 'sofa']
+Benign End:  1632410214.434774
+Attack Start:  1632410214.4347916
+Labels: ['person', 'person', 'cat', 'person']
+Attack End:  1632410215.2428167
+---
+Now processing: person/2008_000569.jpg
+Benign Start:  1632410215.242958
+Labels: ['person', 'person', 'person']
+Benign End:  1632410215.513941
+Attack Start:  1632410215.5139596
+Labels: ['person', 'person', 'person']
+Attack End:  1632410216.3212523
+---
+Now processing: person/2008_000418.jpg
+Benign Start:  1632410216.321397
+Labels: ['chair', 'chair', 'diningtable', 'person', 'diningtable']
+Benign End:  1632410216.594695
+Attack Start:  1632410216.5947285
+Labels: ['person', 'chair', 'chair']
+Attack End:  1632410217.406426
+---
+Now processing: person/2008_000408.jpg
+Benign Start:  1632410217.4065862
+Labels: ['person', 'person', 'diningtable', 'person', 'person']
+Benign End:  1632410217.6821976
+Attack Start:  1632410217.6822157
+Labels: ['person', 'person', 'diningtable', 'person', 'person']
+Attack End:  1632410218.5059195
+---
+Now processing: person/2008_000204.jpg
+Benign Start:  1632410218.5060728
+Labels: ['person']
+Benign End:  1632410218.7681835
+Attack Start:  1632410218.7682023
+Labels: ['person', 'car']
+Attack End:  1632410219.5717597
+---
+Now processing: person/2008_000051.jpg
+Benign Start:  1632410219.571913
+Labels: ['person', 'chair', 'chair']
+Benign End:  1632410219.843559
+Attack Start:  1632410219.843577
+Labels: ['person', 'sofa', 'chair']
+Attack End:  1632410220.6608505
+---
+Now processing: person/2008_000264.jpg
+Benign Start:  1632410220.6610446
+Labels: ['person']
+Benign End:  1632410220.922443
+Attack Start:  1632410220.9224625
+Labels: ['person']
+Attack End:  1632410221.7096055
+---
+Now processing: person/2008_000223.jpg
+Benign Start:  1632410221.7097604
+Labels: ['person', 'boat']
+Benign End:  1632410221.9696054
+Attack Start:  1632410221.969624
+Labels: ['person']
+Attack End:  1632410222.762241
+---
+Now processing: person/2008_000359.jpg
+Benign Start:  1632410222.7623904
+Labels: ['person', 'person']
+Benign End:  1632410223.02633
+Attack Start:  1632410223.0263503
+Labels: ['person', 'person']
+Attack End:  1632410223.8187497
+---
+Now processing: person/2008_000568.jpg
+Benign Start:  1632410223.818897
+Labels: ['person', 'person']
+Benign End:  1632410224.082827
+Attack Start:  1632410224.082846
+Labels: ['person', 'person', 'tvmonitor']
+Attack End:  1632410224.8911974
+---
+Now processing: person/2008_000026.jpg
+Benign Start:  1632410224.8913524
+Labels: ['person', 'dog']
+Benign End:  1632410225.2343333
+Attack Start:  1632410225.234354
+Labels: ['person']
+Attack End:  1632410226.0250854
+---
+Now processing: person/2008_000579.jpg
+Benign Start:  1632410226.0252466
+Labels: ['person', 'person']
+Benign End:  1632410226.2878833
+Attack Start:  1632410226.2879024
+Labels: ['person', 'person']
+Attack End:  1632410227.0825734
+---
+Now processing: person/2008_000067.jpg
+Benign Start:  1632410227.0827253
+Labels: ['person', 'chair']
+Benign End:  1632410227.3463902
+Attack Start:  1632410227.3464093
+Labels: ['diningtable']
+Attack End:  1632410228.1380885
+---
+Now processing: person/2008_000321.jpg
+Benign Start:  1632410228.1382372
+Labels: ['sofa']
+Benign End:  1632410228.3973637
+Attack Start:  1632410228.3973837
+Labels: ['chair']
+Attack End:  1632410229.1921103
+---
+Now processing: person/2008_000298.jpg
+Benign Start:  1632410229.1922581
+Labels: ['person']
+Benign End:  1632410229.4510643
+Attack Start:  1632410229.451083
+Labels: ['person', 'cat']
+Attack End:  1632410230.2468796
+---
+Now processing: person/2008_000661.jpg
+Benign Start:  1632410230.247025
+Labels: ['dog', 'dog', 'person']
+Benign End:  1632410230.5126789
+Attack Start:  1632410230.512697
+Labels: ['horse', 'person', 'horse']
+Attack End:  1632410231.3183165
+---
+Now processing: person/2008_000234.jpg
+Benign Start:  1632410231.318463
+Labels: ['person', 'person', 'person']
+Benign End:  1632410231.5846472
+Attack Start:  1632410231.5846655
+Labels: ['person', 'person', 'person']
+Attack End:  1632410232.3881938
+---
+Now processing: person/2008_000492.jpg
+Benign Start:  1632410232.3883374
+Labels: ['person', 'person', 'sofa']
+Benign End:  1632410232.6581028
+Attack Start:  1632410232.658121
+Labels: ['person', 'person']
+Attack End:  1632410233.4593062
+---
+Now processing: person/2008_000630.jpg
+Benign Start:  1632410233.4594777
+Labels: ['person']
+Benign End:  1632410233.713957
+Attack Start:  1632410233.7139766
+Labels: ['person']
+Attack End:  1632410234.5034516
+---
+Now processing: person/2008_000403.jpg
+Benign Start:  1632410234.5036507
+Labels: ['horse', 'person', 'person']
+Benign End:  1632410234.771714
+Attack Start:  1632410234.771733
+Labels: ['person', 'horse']
+Attack End:  1632410235.5672605
+---
+Now processing: person/2008_000666.jpg
+Benign Start:  1632410235.5674243
+Labels: ['person']
+Benign End:  1632410235.8205154
+Attack Start:  1632410235.8205347
+Labels: ['person', 'dog']
+Attack End:  1632410236.6128268
+---
+Now processing: person/2008_000660.jpg
+Benign Start:  1632410236.6130042
+Labels: ['person', 'cat']
+Benign End:  1632410236.8699422
+Attack Start:  1632410236.8699625
+Labels: ['person', 'chair', 'cat', 'chair']
+Attack End:  1632410237.673953
+---
+Now processing: person/2008_000620.jpg
+Benign Start:  1632410237.6741111
+Labels: ['dog', 'person']
+Benign End:  1632410238.0134468
+Attack Start:  1632410238.0134676
+Labels: ['person', 'horse']
+Attack End:  1632410238.8025935
+---
+Now processing: person/2008_000307.jpg
+Benign Start:  1632410238.802801
+Labels: ['person', 'person', 'person', 'person', 'person', 'person', 'person']
+Benign End:  1632410239.0851324
+Attack Start:  1632410239.0851502
+Labels: ['person', 'person', 'person', 'person', 'person', 'person', 'person']
+Attack End:  1632410239.898438
+---
+Now processing: person/2008_000032.jpg
+Benign Start:  1632410239.8985834
+Labels: ['bus']
+Benign End:  1632410240.1566434
+Attack Start:  1632410240.1566622
+Labels: []
+Attack End:  1632410240.9497592
+---
+Now processing: person/2008_000510.jpg
+Benign Start:  1632410240.9499128
+Labels: ['person']
+Benign End:  1632410241.207314
+Attack Start:  1632410241.2073333
+Labels: ['person']
+Attack End:  1632410241.9965303
+---
+Now processing: person/2008_000553.jpg
+Benign Start:  1632410241.9966784
+Labels: ['person', 'person']
+Benign End:  1632410242.2611048
+Attack Start:  1632410242.2611246
+Labels: ['dog']
+Attack End:  1632410243.056812
+---
+Now processing: person/2008_000690.jpg
+Benign Start:  1632410243.0569618
+Labels: ['dog', 'sofa', 'person']
+Benign End:  1632410243.3226025
+Attack Start:  1632410243.3226216
+Labels: ['person', 'chair']
+Attack End:  1632410244.125036
+---
+Now processing: person/2008_000277.jpg
+Benign Start:  1632410244.1252034
+Labels: ['person', 'person', 'person', 'person']
+Benign End:  1632410244.3985064
+Attack Start:  1632410244.398525
+Labels: ['person', 'person', 'person', 'person', 'person']
+Attack End:  1632410245.2111423
+---
+Now processing: person/2008_000662.jpg
+Benign Start:  1632410245.2112863
+Labels: ['person']
+Benign End:  1632410245.4723985
+Attack Start:  1632410245.472418
+Labels: ['person']
+Attack End:  1632410246.270146
+---
+Now processing: person/2008_000474.jpg
+Benign Start:  1632410246.2703068
+Labels: ['person']
+Benign End:  1632410246.5293834
+Attack Start:  1632410246.5294037
+Labels: ['person', 'chair']
+Attack End:  1632410247.3337948
+---
+Now processing: person/2008_000203.jpg
+Benign Start:  1632410247.3339467
+Labels: ['car', 'person', 'bicycle', 'bird']
+Benign End:  1632410247.6021733
+Attack Start:  1632410247.6021907
+Labels: ['cat']
+Attack End:  1632410248.3967323
+---
+Now processing: person/2008_000629.jpg
+Benign Start:  1632410248.3968813
+Labels: ['person']
+Benign End:  1632410248.6574001
+Attack Start:  1632410248.6574197
+Labels: ['pottedplant']
+Attack End:  1632410249.4501483
+---
+Now processing: person/2008_000271.jpg
+Benign Start:  1632410249.4502985
+Labels: ['person']
+Benign End:  1632410249.7113
+Attack Start:  1632410249.7113187
+Labels: ['person']
+Attack End:  1632410250.4997792
+---
+Now processing: person/2008_000541.jpg
+Benign Start:  1632410250.4999278
+Labels: ['person', 'person', 'person', 'person', 'sofa', 'sofa']
+Benign End:  1632410250.8559027
+Attack Start:  1632410250.8559222
+Labels: ['person', 'person', 'person', 'person']
+Attack End:  1632410251.658184
+---
+Now processing: person/2008_000278.jpg
+Benign Start:  1632410251.6583319
+Labels: ['person', 'person', 'person']
+Benign End:  1632410251.9265873
+Attack Start:  1632410251.9266202
+Labels: ['person', 'person']
+Attack End:  1632410252.7276702
+---
+Now processing: person/2008_000195.jpg
+Benign Start:  1632410252.727866
+Labels: ['person', 'boat', 'person', 'boat', 'person']
+Benign End:  1632410253.0032427
+Attack Start:  1632410253.0032847
+Labels: ['person', 'person', 'dog', 'person']
+Attack End:  1632410253.8103383
+---
+Now processing: person/2008_000516.jpg
+Benign Start:  1632410253.8104823
+Labels: ['person', 'motorbike', 'car']
+Benign End:  1632410254.0793893
+Attack Start:  1632410254.079408
+Labels: ['person', 'bicycle', 'car']
+Attack End:  1632410254.8831599
+---
+Now processing: person/2008_000340.jpg
+Benign Start:  1632410254.8833137
+Labels: ['person']
+Benign End:  1632410255.1395788
+Attack Start:  1632410255.1395981
+Labels: ['person', 'sofa']
+Attack End:  1632410255.9390914
+---
+Now processing: person/2008_000691.jpg
+Benign Start:  1632410255.9392378
+Labels: ['person', 'person']
+Benign End:  1632410256.2031498
+Attack Start:  1632410256.2031698
+Labels: ['cat', 'cat', 'person', 'person', 'cat']
+Attack End:  1632410257.0114338
+---
+Now processing: person/2008_000481.jpg
+Benign Start:  1632410257.0115771
+Labels: ['person']
+Benign End:  1632410257.27131
+Attack Start:  1632410257.271329
+Labels: ['boat']
+Attack End:  1632410258.0677326
+---
+Now processing: person/2008_000222.jpg
+Benign Start:  1632410258.0678823
+Labels: ['cat', 'person']
+Benign End:  1632410258.3306205
+Attack Start:  1632410258.3306396
+Labels: ['person', 'sofa']
+Attack End:  1632410259.1307766
+---
+Now processing: person/2008_000367.jpg
+Benign Start:  1632410259.1309245
+Labels: ['person', 'aeroplane']
+Benign End:  1632410259.392627
+Attack Start:  1632410259.3926454
+Labels: ['person']
+Attack End:  1632410260.1841445
+---
+Now processing: person/2008_000138.jpg
+Benign Start:  1632410260.1843002
+Labels: ['dog', 'person', 'person', 'person']
+Benign End:  1632410260.4545472
+Attack Start:  1632410260.454565
+Labels: []
+Attack End:  1632410261.2406023
+---
+Now processing: person/2008_000446.jpg
+Benign Start:  1632410261.2407548
+Labels: ['person', 'person', 'person', 'chair']
+Benign End:  1632410261.5098658
+Attack Start:  1632410261.5098858
+Labels: ['person', 'person']
+Attack End:  1632410262.3052375
+---
+Now processing: person/2008_000452.jpg
+Benign Start:  1632410262.3053875
+Labels: ['person', 'person', 'person', 'person']
+Benign End:  1632410262.5762308
+Attack Start:  1632410262.576249
+Labels: ['person', 'person', 'person']
+Attack End:  1632410263.4515128
+---
+Now processing: person/2008_000215.jpg
+Benign Start:  1632410263.4516795
+Labels: ['person', 'person', 'person']
+Benign End:  1632410263.7206335
+Attack Start:  1632410263.720653
+Labels: ['person', 'person', 'person']
+Attack End:  1632410264.5247433
+---
+Now processing: person/2008_000281.jpg
+Benign Start:  1632410264.524899
+Labels: ['car', 'car', 'person']
+Benign End:  1632410264.793531
+Attack Start:  1632410264.7935495
+Labels: ['car', 'car']
+Attack End:  1632410265.5891345
+---
+Now processing: person/2008_000052.jpg
+Benign Start:  1632410265.5892792
+Labels: ['car', 'person', 'person']
+Benign End:  1632410265.8506534
+Attack Start:  1632410265.8506715
+Labels: ['car', 'person', 'person']
+Attack End:  1632410266.6544
+---
+Now processing: person/2008_000034.jpg
+Benign Start:  1632410266.654544
+Labels: ['person', 'bottle', 'person', 'person']
+Benign End:  1632410266.9275532
+Attack Start:  1632410266.9275718
+Labels: ['person', 'person', 'bottle', 'person']
+Attack End:  1632410267.736947
+---
+Now processing: person/2008_000558.jpg
+Benign Start:  1632410267.7371528
+Labels: ['person']
+Benign End:  1632410267.9953592
+Attack Start:  1632410267.9953785
+Labels: ['person']
+Attack End:  1632410268.7855291
+---
+Now processing: person/2008_000381.jpg
+Benign Start:  1632410268.7856822
+Labels: ['person', 'chair', 'chair']
+Benign End:  1632410269.050252
+Attack Start:  1632410269.0502703
+Labels: ['person', 'person', 'chair']
+Attack End:  1632410269.8547473
+---
+Now processing: person/2008_000547.jpg
+Benign Start:  1632410269.8548913
+Labels: ['motorbike', 'person', 'motorbike', 'person', 'person']
+Benign End:  1632410270.1306827
+Attack Start:  1632410270.1307008
+Labels: ['motorbike', 'motorbike', 'person', 'person', 'person', 'motorbike']
+Attack End:  1632410270.9525402
+---
+Now processing: person/2008_000469.jpg
+Benign Start:  1632410270.9526832
+Labels: ['person', 'person']
+Benign End:  1632410271.217495
+Attack Start:  1632410271.217514
+Labels: ['person', 'person']
+Attack End:  1632410272.0129373
+---
+Now processing: person/2008_000562.jpg
+Benign Start:  1632410272.01317
+Labels: ['person', 'bicycle', 'person', 'car']
+Benign End:  1632410272.2844548
+Attack Start:  1632410272.2844734
+Labels: ['person', 'bicycle', 'person', 'car']
+Attack End:  1632410273.0867195
+---
+Now processing: person/2008_000254.jpg
+Benign Start:  1632410273.0868664
+Labels: ['person', 'person', 'person']
+Benign End:  1632410273.3562415
+Attack Start:  1632410273.3562603
+Labels: ['person', 'person']
+Attack End:  1632410274.1476731
+---
+Now processing: person/2008_000382.jpg
+Benign Start:  1632410274.1478271
+Labels: ['person']
+Benign End:  1632410274.4049053
+Attack Start:  1632410274.4049253
+Labels: ['person', 'cat']
+Attack End:  1632410275.1981502
+---
+Now processing: person/2008_000614.jpg
+Benign Start:  1632410275.1983008
+Labels: ['person', 'person', 'person']
+Benign End:  1632410275.5396886
+Attack Start:  1632410275.5397084
+Labels: ['person', 'person', 'person']
+Attack End:  1632410276.3352246
+---
+Now processing: person/2008_000424.jpg
+Benign Start:  1632410276.335374
+Labels: ['person', 'person', 'person', 'person', 'person', 'person', 'person', 'person']
+Benign End:  1632410276.6216743
+Attack Start:  1632410276.621692
+Labels: ['person', 'person', 'person', 'person', 'person', 'person', 'person', 'person']
+Attack End:  1632410277.4468431
+---
+Now processing: person/2008_000473.jpg
+Benign Start:  1632410277.4469879
+Labels: ['person', 'chair', 'chair', 'person']
+Benign End:  1632410277.7161326
+Attack Start:  1632410277.7161503
+Labels: ['person']
+Attack End:  1632410278.5108364
+---
+Now processing: person/2008_000407.jpg
+Benign Start:  1632410278.5109954
+Labels: ['person']
+Benign End:  1632410278.7722225
+Attack Start:  1632410278.7722425
+Labels: ['person', 'person']
+Attack End:  1632410279.573546
+---
+Now processing: person/2008_000609.jpg
+Benign Start:  1632410279.5737062
+Labels: ['person', 'person', 'person']
+Benign End:  1632410279.8375728
+Attack Start:  1632410279.837592
+Labels: ['person', 'person']
+Attack End:  1632410280.6387284
+---
+Now processing: person/2008_000082.jpg
+Benign Start:  1632410280.638873
+Labels: ['motorbike', 'person', 'boat', 'person']
+Benign End:  1632410280.9063828
+Attack Start:  1632410280.9064016
+Labels: ['motorbike', 'person', 'boat']
+Attack End:  1632410281.713161
+---
+Now processing: person/2008_000090.jpg
+Benign Start:  1632410281.7133086
+Labels: ['person', 'person', 'bicycle', 'person']
+Benign End:  1632410281.98294
+Attack Start:  1632410281.9829571
+Labels: ['person', 'person', 'person', 'person']
+Attack End:  1632410282.7915735
+---
+Now processing: person/2008_000413.jpg
+Benign Start:  1632410282.7917202
+Labels: ['person']
+Benign End:  1632410283.052096
+Attack Start:  1632410283.0521154
+Labels: ['person']
+Attack End:  1632410283.8442657
+---
+Now processing: person/2008_000599.jpg
+Benign Start:  1632410283.844415
+Labels: ['person', 'person', 'person', 'car', 'car', 'car', 'car']
+Benign End:  1632410284.124362
+Attack Start:  1632410284.1243808
+Labels: ['person', 'person', 'car', 'car', 'car']
+Attack End:  1632410284.9381025
+---
+Now processing: person/2008_000640.jpg
+Benign Start:  1632410284.9382472
+Labels: ['person', 'person']
+Benign End:  1632410285.1989398
+Attack Start:  1632410285.198959
+Labels: ['person', 'person', 'chair']
+Attack End:  1632410285.994761
+---
+Now processing: person/2008_000677.jpg
+Benign Start:  1632410285.9949045
+Labels: ['person', 'person', 'person', 'person', 'person', 'bottle']
+Benign End:  1632410286.2704556
+Attack Start:  1632410286.2704737
+Labels: ['person', 'person', 'person', 'person', 'person', 'sheep']
+Attack End:  1632410287.0826867
+---
+Now processing: person/2008_000673.jpg
+Benign Start:  1632410287.082831
+Labels: ['person', 'person', 'chair', 'person']
+Benign End:  1632410287.4285557
+Attack Start:  1632410287.4285748
+Labels: ['chair', 'person']
+Attack End:  1632410288.2255445
+---
+Now processing: person/2008_000605.jpg
+Benign Start:  1632410288.2256935
+Labels: ['person']
+Benign End:  1632410288.4891315
+Attack Start:  1632410288.4891508
+Labels: ['chair']
+Attack End:  1632410289.280014
+---
+Now processing: person/2008_000354.jpg
+Benign Start:  1632410289.2801666
+Labels: ['person', 'person']
+Benign End:  1632410289.5395231
+Attack Start:  1632410289.5395412
+Labels: ['chair', 'diningtable']
+Attack End:  1632410290.3311453
+---
+Now processing: car/2008_003005.jpg
+Benign Start:  1632410290.331494
+Labels: ['car']
+Benign End:  1632410290.5916336
+Attack Start:  1632410290.591653
+Labels: ['train']
+Attack End:  1632410291.3813007
+---
+Now processing: car/2008_000042.jpg
+Benign Start:  1632410291.381452
+Labels: ['car']
+Benign End:  1632410291.6428115
+Attack Start:  1632410291.6428313
+Labels: []
+Attack End:  1632410292.4365091
+---
+Now processing: car/2008_003255.jpg
+Benign Start:  1632410292.4366632
+Labels: ['car', 'car']
+Benign End:  1632410292.6986463
+Attack Start:  1632410292.6986651
+Labels: ['bus', 'car']
+Attack End:  1632410293.4981368
+---
+Now processing: car/2008_004182.jpg
+Benign Start:  1632410293.4982817
+Labels: ['person', 'person', 'car', 'person']
+Benign End:  1632410293.767375
+Attack Start:  1632410293.7673929
+Labels: ['person', 'person', 'car', 'person']
+Attack End:  1632410294.5746944
+---
+Now processing: car/2008_004414.jpg
+Benign Start:  1632410294.5748382
+Labels: ['car']
+Benign End:  1632410294.8356793
+Attack Start:  1632410294.835698
+Labels: ['car']
+Attack End:  1632410295.6318433
+---
+Now processing: car/2008_001543.jpg
+Benign Start:  1632410295.6319916
+Labels: ['car']
+Benign End:  1632410295.8901546
+Attack Start:  1632410295.8901737
+Labels: ['car']
+Attack End:  1632410296.6815856
+---
+Now processing: car/2008_001586.jpg
+Benign Start:  1632410296.6817477
+Labels: ['car', 'motorbike', 'car', 'car']
+Benign End:  1632410296.9499755
+Attack Start:  1632410296.949994
+Labels: ['car', 'motorbike', 'car']
+Attack End:  1632410297.7499912
+---
+Now processing: car/2008_000659.jpg
+Benign Start:  1632410297.7501369
+Labels: ['car']
+Benign End:  1632410298.0096757
+Attack Start:  1632410298.0096955
+Labels: ['car']
+Attack End:  1632410298.7942674
+---
+Now processing: car/2008_003577.jpg
+Benign Start:  1632410298.7944167
+Labels: ['car', 'car']
+Benign End:  1632410299.0542738
+Attack Start:  1632410299.0542934
+Labels: ['car', 'car']
+Attack End:  1632410299.8530734
+---
+Now processing: car/2008_003673.jpg
+Benign Start:  1632410299.8532543
+Labels: ['aeroplane', 'car', 'car', 'bus']
+Benign End:  1632410300.1232505
+Attack Start:  1632410300.123269
+Labels: ['aeroplane', 'car', 'aeroplane']
+Attack End:  1632410301.004963
+---
+Now processing: car/2008_004069.jpg
+Benign Start:  1632410301.0051382
+Labels: ['car']
+Benign End:  1632410301.263886
+Attack Start:  1632410301.263905
+Labels: ['car']
+Attack End:  1632410302.0566962
+---
+Now processing: car/2008_004464.jpg
+Benign Start:  1632410302.056844
+Labels: ['person', 'car', 'car']
+Benign End:  1632410302.3201582
+Attack Start:  1632410302.320178
+Labels: ['person', 'cat', 'person', 'car']
+Attack End:  1632410303.1247952
+---
+Now processing: car/2008_003141.jpg
+Benign Start:  1632410303.124952
+Labels: ['car', 'bus', 'person', 'person', 'person']
+Benign End:  1632410303.4002175
+Attack Start:  1632410303.4002354
+Labels: ['car', 'bus', 'person', 'person']
+Attack End:  1632410304.2077668
+---
+Now processing: car/2008_000457.jpg
+Benign Start:  1632410304.207911
+Labels: ['car', 'car']
+Benign End:  1632410304.4709907
+Attack Start:  1632410304.4710093
+Labels: ['car', 'car']
+Attack End:  1632410305.2710118
+---
+Now processing: car/2008_001007.jpg
+Benign Start:  1632410305.271161
+Labels: ['person', 'motorbike', 'car']
+Benign End:  1632410305.541395
+Attack Start:  1632410305.5414126
+Labels: ['person', 'bird']
+Attack End:  1632410306.3438642
+---
+Now processing: car/2008_001262.jpg
+Benign Start:  1632410306.3440113
+Labels: ['car', 'car']
+Benign End:  1632410306.6071646
+Attack Start:  1632410306.6071846
+Labels: []
+Attack End:  1632410307.3967533
+---
+Now processing: car/2008_001830.jpg
+Benign Start:  1632410307.3969114
+Labels: ['car', 'car', 'car']
+Benign End:  1632410307.6627965
+Attack Start:  1632410307.6628168
+Labels: ['car', 'car']
+Attack End:  1632410308.461507
+---
+Now processing: car/2008_000939.jpg
+Benign Start:  1632410308.4616559
+Labels: ['car', 'person']
+Benign End:  1632410308.7241793
+Attack Start:  1632410308.7241979
+Labels: ['car']
+Attack End:  1632410309.5192928
+---
+Now processing: car/2008_003835.jpg
+Benign Start:  1632410309.5194545
+Labels: ['car', 'car']
+Benign End:  1632410309.7815778
+Attack Start:  1632410309.7815967
+Labels: ['car']
+Attack End:  1632410310.5693517
+---
+Now processing: car/2008_000904.jpg
+Benign Start:  1632410310.5695012
+Labels: ['tvmonitor', 'person', 'person', 'chair', 'person']
+Benign End:  1632410310.8411918
+Attack Start:  1632410310.8412101
+Labels: ['person', 'person', 'chair', 'car']
+Attack End:  1632410311.646135
+---
+Now processing: car/2008_003132.jpg
+Benign Start:  1632410311.6462789
+Labels: ['car', 'person', 'person', 'person']
+Benign End:  1632410311.9157133
+Attack Start:  1632410311.9157314
+Labels: ['person', 'bus', 'person', 'person']
+Attack End:  1632410312.7167664
+---
+Now processing: car/2008_002401.jpg
+Benign Start:  1632410312.7169096
+Labels: ['car', 'car', 'motorbike']
+Benign End:  1632410313.0598414
+Attack Start:  1632410313.0598614
+Labels: ['car', 'motorbike', 'car']
+Attack End:  1632410313.8565407
+---
+Now processing: car/2008_000050.jpg
+Benign Start:  1632410313.8566995
+Labels: ['car']
+Benign End:  1632410314.1151943
+Attack Start:  1632410314.1152139
+Labels: ['car']
+Attack End:  1632410314.9107726
+---
+Now processing: car/2008_002956.jpg
+Benign Start:  1632410314.9109206
+Labels: ['person', 'person', 'person', 'car']
+Benign End:  1632410315.1803272
+Attack Start:  1632410315.1803458
+Labels: ['person', 'person', 'person', 'car']
+Attack End:  1632410315.9818823
+---
+Now processing: car/2008_003829.jpg
+Benign Start:  1632410315.982026
+Labels: ['person', 'car', 'car']
+Benign End:  1632410316.245501
+Attack Start:  1632410316.245519
+Labels: ['person', 'car']
+Attack End:  1632410317.045479
+---
+Now processing: car/2008_000828.jpg
+Benign Start:  1632410317.0456288
+Labels: ['car', 'person']
+Benign End:  1632410317.3077743
+Attack Start:  1632410317.3077936
+Labels: ['car', 'person']
+Attack End:  1632410318.109747
+---
+Now processing: car/2008_003680.jpg
+Benign Start:  1632410318.1099098
+Labels: ['car', 'car', 'car', 'car', 'car', 'car', 'car']
+Benign End:  1632410318.3923557
+Attack Start:  1632410318.3923738
+Labels: ['car', 'car', 'car', 'car']
+Attack End:  1632410319.2042954
+---
+Now processing: car/2008_001717.jpg
+Benign Start:  1632410319.2044418
+Labels: ['car', 'car']
+Benign End:  1632410319.4655347
+Attack Start:  1632410319.4655535
+Labels: ['car', 'car']
+Attack End:  1632410320.2601464
+---
+Now processing: car/2008_002198.jpg
+Benign Start:  1632410320.2602923
+Labels: ['car']
+Benign End:  1632410320.5155218
+Attack Start:  1632410320.5155413
+Labels: ['bus']
+Attack End:  1632410321.3087091
+---
+Now processing: car/2008_000163.jpg
+Benign Start:  1632410321.3088584
+Labels: ['car']
+Benign End:  1632410321.565493
+Attack Start:  1632410321.565512
+Labels: ['car']
+Attack End:  1632410322.3556514
+---
+Now processing: car/2008_000133.jpg
+Benign Start:  1632410322.3558295
+Labels: ['car']
+Benign End:  1632410322.6173377
+Attack Start:  1632410322.6173577
+Labels: ['bicycle']
+Attack End:  1632410323.4073944
+---
+Now processing: car/2008_003022.jpg
+Benign Start:  1632410323.4075427
+Labels: ['car', 'car', 'car']
+Benign End:  1632410323.6735725
+Attack Start:  1632410323.673591
+Labels: ['car', 'car']
+Attack End:  1632410324.4696267
+---
+Now processing: car/2008_002322.jpg
+Benign Start:  1632410324.4697807
+Labels: ['person', 'car', 'bicycle', 'car']
+Benign End:  1632410324.738024
+Attack Start:  1632410324.738042
+Labels: ['person', 'car', 'bicycle', 'car', 'car']
+Attack End:  1632410325.5458505
+---
+Now processing: car/2008_000027.jpg
+Benign Start:  1632410325.545995
+Labels: ['car']
+Benign End:  1632410325.8863776
+Attack Start:  1632410325.8863997
+Labels: []
+Attack End:  1632410326.6704175
+---
+Now processing: car/2008_002138.jpg
+Benign Start:  1632410326.6705682
+Labels: ['aeroplane', 'car']
+Benign End:  1632410326.931252
+Attack Start:  1632410326.9312706
+Labels: ['aeroplane', 'car']
+Attack End:  1632410327.7311254
+---
+Now processing: car/2008_002366.jpg
+Benign Start:  1632410327.7312734
+Labels: ['person', 'car']
+Benign End:  1632410327.9922903
+Attack Start:  1632410327.992309
+Labels: ['chair', 'person', 'chair']
+Attack End:  1632410328.790163
+---
+Now processing: car/2008_003205.jpg
+Benign Start:  1632410328.7903113
+Labels: ['bicycle', 'person', 'car']
+Benign End:  1632410329.0581365
+Attack Start:  1632410329.0581548
+Labels: ['person', 'car', 'bicycle', 'person']
+Attack End:  1632410329.8653097
+---
+Now processing: car/2008_002643.jpg
+Benign Start:  1632410329.8654578
+Labels: ['person', 'car', 'car']
+Benign End:  1632410330.1291041
+Attack Start:  1632410330.129123
+Labels: ['person']
+Attack End:  1632410330.9276075
+---
+Now processing: car/2008_003924.jpg
+Benign Start:  1632410330.927757
+Labels: ['bus', 'bus', 'bus']
+Benign End:  1632410331.1932635
+Attack Start:  1632410331.1932826
+Labels: ['train']
+Attack End:  1632410331.99394
+---
+Now processing: car/2008_003943.jpg
+Benign Start:  1632410331.9941304
+Labels: ['car']
+Benign End:  1632410332.2498143
+Attack Start:  1632410332.2498338
+Labels: ['car']
+Attack End:  1632410333.0411298
+---
+Now processing: car/2008_000880.jpg
+Benign Start:  1632410333.0413013
+Labels: ['horse', 'car', 'person', 'horse', 'horse', 'person', 'person', 'horse']
+Benign End:  1632410333.3240495
+Attack Start:  1632410333.3240678
+Labels: ['person', 'horse', 'person', 'car', 'person']
+Attack End:  1632410334.1424158
+---
+Now processing: car/2008_001908.jpg
+Benign Start:  1632410334.1425588
+Labels: ['car', 'car']
+Benign End:  1632410334.4029186
+Attack Start:  1632410334.4029381
+Labels: []
+Attack End:  1632410335.1940157
+---
+Now processing: car/2008_004046.jpg
+Benign Start:  1632410335.194168
+Labels: ['person', 'car', 'car']
+Benign End:  1632410335.4585402
+Attack Start:  1632410335.4585586
+Labels: ['person']
+Attack End:  1632410336.249921
+---
+Now processing: car/2008_003300.jpg
+Benign Start:  1632410336.2500823
+Labels: ['car']
+Benign End:  1632410336.5099473
+Attack Start:  1632410336.5099664
+Labels: ['cat']
+Attack End:  1632410337.2937837
+---
+Now processing: car/2008_000501.jpg
+Benign Start:  1632410337.293937
+Labels: ['car']
+Benign End:  1632410337.5492947
+Attack Start:  1632410337.5493147
+Labels: []
+Attack End:  1632410338.332341
+---
+Now processing: car/2008_000251.jpg
+Benign Start:  1632410338.3325078
+Labels: ['car', 'aeroplane', 'aeroplane', 'aeroplane']
+Benign End:  1632410338.6786625
+Attack Start:  1632410338.6786819
+Labels: ['car']
+Attack End:  1632410339.4717438
+---
+Now processing: car/2008_002223.jpg
+Benign Start:  1632410339.4718928
+Labels: ['car']
+Benign End:  1632410339.7316763
+Attack Start:  1632410339.7316966
+Labels: ['car']
+Attack End:  1632410340.524113
+---
+Now processing: car/2008_003775.jpg
+Benign Start:  1632410340.5242631
+Labels: ['person', 'person', 'car']
+Benign End:  1632410340.7897584
+Attack Start:  1632410340.7897763
+Labels: ['person', 'person']
+Attack End:  1632410341.585764
+---
+Now processing: car/2008_003479.jpg
+Benign Start:  1632410341.5859115
+Labels: ['car', 'car', 'person', 'motorbike']
+Benign End:  1632410341.8545036
+Attack Start:  1632410341.8545218
+Labels: ['car', 'car', 'person']
+Attack End:  1632410342.6547463
+---
+Now processing: car/2008_001432.jpg
+Benign Start:  1632410342.6548922
+Labels: ['car', 'person']
+Benign End:  1632410342.9142168
+Attack Start:  1632410342.9142356
+Labels: ['car', 'person']
+Attack End:  1632410343.7138033
+---
+Now processing: car/2008_001062.jpg
+Benign Start:  1632410343.7139518
+Labels: ['cow', 'cow', 'car', 'car', 'cow', 'car', 'cow']
+Benign End:  1632410343.991877
+Attack Start:  1632410343.9918947
+Labels: ['car', 'car', 'dog', 'car']
+Attack End:  1632410344.8050652
+---
+Now processing: car/2008_000884.jpg
+Benign Start:  1632410344.805214
+Labels: ['car', 'car']
+Benign End:  1632410345.0636644
+Attack Start:  1632410345.063683
+Labels: ['car', 'car', 'pottedplant']
+Attack End:  1632410345.8646553
+---
+Now processing: car/2008_003755.jpg
+Benign Start:  1632410345.864799
+Labels: ['car', 'dog', 'person']
+Benign End:  1632410346.1298044
+Attack Start:  1632410346.129823
+Labels: ['person', 'car', 'person', 'car']
+Attack End:  1632410346.9384782
+---
+Now processing: car/2008_004020.jpg
+Benign Start:  1632410346.9386275
+Labels: ['car', 'person', 'person']
+Benign End:  1632410347.20327
+Attack Start:  1632410347.2032886
+Labels: ['car']
+Attack End:  1632410347.9956648
+---
+Now processing: car/2008_003350.jpg
+Benign Start:  1632410347.9958138
+Labels: ['car']
+Benign End:  1632410348.2557788
+Attack Start:  1632410348.2557986
+Labels: ['car']
+Attack End:  1632410349.0438647
+---
+Now processing: car/2008_003844.jpg
+Benign Start:  1632410349.0440152
+Labels: ['car', 'person', 'motorbike', 'car', 'car', 'car']
+Benign End:  1632410349.3194222
+Attack Start:  1632410349.3194406
+Labels: ['car', 'person', 'car', 'car', 'car', 'bottle']
+Attack End:  1632410350.1281314
+---
+Now processing: car/2008_004326.jpg
+Benign Start:  1632410350.128274
+Labels: ['car', 'car', 'car', 'car']
+Benign End:  1632410350.3946064
+Attack Start:  1632410350.3946238
+Labels: ['car', 'car']
+Attack End:  1632410351.2663903
+---
+Now processing: car/2008_000982.jpg
+Benign Start:  1632410351.2665598
+Labels: ['bus', 'bus', 'person', 'motorbike']
+Benign End:  1632410351.539677
+Attack Start:  1632410351.5396955
+Labels: ['car', 'train']
+Attack End:  1632410352.3367422
+---
+Now processing: car/2008_001681.jpg
+Benign Start:  1632410352.3369193
+Labels: ['car', 'person']
+Benign End:  1632410352.602617
+Attack Start:  1632410352.6026356
+Labels: []
+Attack End:  1632410353.395062
+---
+Now processing: car/2008_002199.jpg
+Benign Start:  1632410353.395213
+Labels: ['car', 'person', 'person', 'car', 'person', 'person']
+Benign End:  1632410353.6695511
+Attack Start:  1632410353.6696007
+Labels: ['person', 'car', 'person', 'person', 'car']
+Attack End:  1632410354.4775062
+---
+Now processing: car/2008_000304.jpg
+Benign Start:  1632410354.477658
+Labels: ['car', 'car', 'car', 'car']
+Benign End:  1632410354.7470398
+Attack Start:  1632410354.7470584
+Labels: ['car', 'car', 'car', 'car']
+Attack End:  1632410355.5565584
+---
+Now processing: car/2008_003647.jpg
+Benign Start:  1632410355.5567176
+Labels: ['car']
+Benign End:  1632410355.816421
+Attack Start:  1632410355.81644
+Labels: ['chair', 'dog']
+Attack End:  1632410356.6140215
+---
+Now processing: car/2008_003030.jpg
+Benign Start:  1632410356.6141675
+Labels: ['car']
+Benign End:  1632410356.8754823
+Attack Start:  1632410356.875502
+Labels: ['car', 'car']
+Attack End:  1632410357.6744409
+---
+Now processing: car/2008_003082.jpg
+Benign Start:  1632410357.6746023
+Labels: ['person', 'car']
+Benign End:  1632410357.935987
+Attack Start:  1632410357.9360054
+Labels: []
+Attack End:  1632410358.723298
+---
+Now processing: car/2008_001142.jpg
+Benign Start:  1632410358.7234533
+Labels: ['car']
+Benign End:  1632410358.979005
+Attack Start:  1632410358.9790244
+Labels: ['car']
+Attack End:  1632410359.772312
+---
+Now processing: car/2008_001334.jpg
+Benign Start:  1632410359.7724628
+Labels: ['car']
+Benign End:  1632410360.0307846
+Attack Start:  1632410360.0308044
+Labels: []
+Attack End:  1632410360.8150246
+---
+Now processing: car/2008_000203.jpg
+Benign Start:  1632410360.8151793
+Labels: ['car', 'person', 'bicycle', 'bird']
+Benign End:  1632410361.0844874
+Attack Start:  1632410361.0845048
+Labels: ['cat', 'person']
+Attack End:  1632410361.883065
+---
+Now processing: car/2008_003202.jpg
+Benign Start:  1632410361.8832207
+Labels: ['car', 'person', 'person']
+Benign End:  1632410362.147978
+Attack Start:  1632410362.1479957
+Labels: ['person', 'person', 'tvmonitor']
+Attack End:  1632410362.9464474
+---
+Now processing: car/2008_003868.jpg
+Benign Start:  1632410362.9465897
+Labels: ['car', 'person', 'car']
+Benign End:  1632410363.2112298
+Attack Start:  1632410363.2112482
+Labels: ['person', 'car']
+Attack End:  1632410364.0842369
+---
+Now processing: car/2008_002516.jpg
+Benign Start:  1632410364.0844166
+Labels: []
+Benign End:  1632410364.3458574
+Attack Start:  1632410364.3458772
+too many indices for array: array is 1-dimensional, but 2 were indexed
+Exception processing car/2008_002516.jpg
+---
+Now processing: car/2008_004127.jpg
+Benign Start:  1632410364.531723
+Labels: ['car', 'car']
+Benign End:  1632410364.7894757
+Attack Start:  1632410364.7894957
+Labels: ['car', 'car', 'car']
+Attack End:  1632410365.593922
+---
+Now processing: car/2008_002958.jpg
+Benign Start:  1632410365.594069
+Labels: ['dog', 'car', 'car']
+Benign End:  1632410365.8581247
+Attack Start:  1632410365.8581426
+Labels: ['car', 'dog']
+Attack End:  1632410366.650648
+---
+Now processing: car/2008_003333.jpg
+Benign Start:  1632410366.6507945
+Labels: ['person', 'car', 'motorbike']
+Benign End:  1632410366.9150543
+Attack Start:  1632410366.9150736
+Labels: ['person', 'bicycle']
+Attack End:  1632410367.716235
+---
+Now processing: car/2008_003846.jpg
+Benign Start:  1632410367.7163992
+Labels: ['car']
+Benign End:  1632410367.9759614
+Attack Start:  1632410367.9759815
+Labels: ['car']
+Attack End:  1632410368.7703636
+---
+Now processing: car/2008_002875.jpg
+Benign Start:  1632410368.7705145
+Labels: ['car', 'car', 'car', 'car']
+Benign End:  1632410369.040405
+Attack Start:  1632410369.0404227
+Labels: ['car', 'car', 'car']
+Attack End:  1632410369.8436148
+---
+Now processing: car/2008_000174.jpg
+Benign Start:  1632410369.8437605
+Labels: ['car', 'car', 'car', 'car', 'car']
+Benign End:  1632410370.1150205
+Attack Start:  1632410370.1150384
+Labels: ['car']
+Attack End:  1632410370.9102936
+---
+Now processing: car/2008_000281.jpg
+Benign Start:  1632410370.9104514
+Labels: ['car', 'car', 'person']
+Benign End:  1632410371.181514
+Attack Start:  1632410371.1815324
+Labels: ['car', 'car']
+Attack End:  1632410371.9878726
+---
+Now processing: car/2008_004312.jpg
+Benign Start:  1632410371.9880471
+Labels: ['car']
+Benign End:  1632410372.2468607
+Attack Start:  1632410372.2468846
+Labels: ['car']
+Attack End:  1632410373.0361488
+---
+Now processing: car/2008_001961.jpg
+Benign Start:  1632410373.036302
+Labels: ['car', 'car', 'car']
+Benign End:  1632410373.3005137
+Attack Start:  1632410373.3005319
+Labels: ['car', 'car']
+Attack End:  1632410374.0957422
+---
+Now processing: car/2008_004339.jpg
+Benign Start:  1632410374.0958912
+Labels: ['car']
+Benign End:  1632410374.3536587
+Attack Start:  1632410374.3536777
+Labels: []
+Attack End:  1632410375.137395
+---
+Now processing: car/2008_000052.jpg
+Benign Start:  1632410375.1375813
+Labels: ['car', 'person', 'person']
+Benign End:  1632410375.398772
+Attack Start:  1632410375.39879
+Labels: ['car', 'person', 'person']
+Attack End:  1632410376.1995854
+---
+Now processing: car/2008_002705.jpg
+Benign Start:  1632410376.199739
+Labels: ['car', 'person']
+Benign End:  1632410376.5426948
+Attack Start:  1632410376.5427148
+Labels: ['train', 'person']
+Attack End:  1632410377.3365283
+---
+Now processing: car/2008_001867.jpg
+Benign Start:  1632410377.3366776
+Labels: ['person', 'car', 'person', 'car', 'car']
+Benign End:  1632410377.6111646
+Attack Start:  1632410377.6111827
+Labels: ['person', 'car', 'car', 'person', 'car']
+Attack End:  1632410378.4207435
+---
+Now processing: car/2008_001445.jpg
+Benign Start:  1632410378.4208884
+Labels: ['car', 'car', 'car', 'car', 'car']
+Benign End:  1632410378.6916726
+Attack Start:  1632410378.6916904
+Labels: ['car', 'car', 'car', 'car', 'car']
+Attack End:  1632410379.4965343
+---
+Now processing: car/2008_000562.jpg
+Benign Start:  1632410379.4966779
+Labels: ['person', 'bicycle', 'person', 'car']
+Benign End:  1632410379.7660425
+Attack Start:  1632410379.7660604
+Labels: ['person', 'bicycle', 'person', 'car']
+Attack End:  1632410380.5795362
+---
+Now processing: car/2008_002444.jpg
+Benign Start:  1632410380.5797172
+Labels: ['car', 'car']
+Benign End:  1632410380.844257
+Attack Start:  1632410380.844276
+Labels: ['car', 'car']
+Attack End:  1632410381.643081
+---
+Now processing: car/2008_002640.jpg
+Benign Start:  1632410381.6432571
+Labels: ['person', 'person', 'person', 'car']
+Benign End:  1632410381.9119256
+Attack Start:  1632410381.9119422
+Labels: ['person', 'car', 'boat']
+Attack End:  1632410382.7191048
+---
+Now processing: car/2008_000253.jpg
+Benign Start:  1632410382.7192569
+Labels: ['car']
+Benign End:  1632410382.9765208
+Attack Start:  1632410382.9765406
+Labels: ['car']
+Attack End:  1632410383.7675796
+---
+Now processing: car/2008_002483.jpg
+Benign Start:  1632410383.767729
+Labels: ['car', 'car', 'person', 'car', 'person']
+Benign End:  1632410384.0406783
+Attack Start:  1632410384.0406969
+Labels: ['car', 'person', 'car']
+Attack End:  1632410384.847982
+---
+Now processing: car/2008_002746.jpg
+Benign Start:  1632410384.848126
+Labels: ['car', 'person', 'car', 'person', 'person', 'car']
+Benign End:  1632410385.125906
+Attack Start:  1632410385.1259236
+Labels: ['person', 'person', 'car', 'car', 'person']
+Attack End:  1632410385.9407952
+---
+Now processing: car/2008_004056.jpg
+Benign Start:  1632410385.940938
+Labels: ['person', 'car']
+Benign End:  1632410386.2005563
+Attack Start:  1632410386.2005749
+Labels: ['person', 'car']
+Attack End:  1632410386.995476
+---
+Now processing: car/2008_002212.jpg
+Benign Start:  1632410386.9956234
+Labels: ['person', 'car', 'person']
+Benign End:  1632410387.2612107
+Attack Start:  1632410387.2612295
+Labels: ['car', 'person', 'person']
+Attack End:  1632410388.0594475
+---
+Now processing: car/2008_000868.jpg
+Benign Start:  1632410388.059592
+Labels: ['car', 'person', 'person', 'person', 'person', 'person', 'person']
+Benign End:  1632410388.4188669
+Attack Start:  1632410388.418886
+Labels: ['person', 'car', 'person', 'person', 'person']
+Attack End:  1632410389.2284925
+---
+Now processing: car/2008_004142.jpg
+Benign Start:  1632410389.2286363
+Labels: ['person', 'person', 'bicycle', 'bicycle', 'person', 'bicycle', 'person', 'person', 'car', 'person']
+Benign End:  1632410389.5204442
+Attack Start:  1632410389.5204618
+Labels: ['person', 'car', 'person', 'person', 'bicycle', 'bicycle', 'person', 'person', 'person']
+Attack End:  1632410390.35143
+---
+Now processing: car/2008_003860.jpg
+Benign Start:  1632410390.3515728
+Labels: ['car', 'car', 'person']
+Benign End:  1632410390.620175
+Attack Start:  1632410390.620194
+Labels: ['car', 'car', 'chair']
+Attack End:  1632410391.418318
+---
+Now processing: car/2008_003794.jpg
+Benign Start:  1632410391.4184625
+Labels: ['car', 'car', 'car', 'car', 'person']
+Benign End:  1632410391.6902707
+Attack Start:  1632410391.6902897
+Labels: ['car', 'car', 'boat']
+Attack End:  1632410392.494872
+---
+Now processing: car/2008_000599.jpg
+Benign Start:  1632410392.4950469
+Labels: ['person', 'person', 'person', 'car', 'car', 'car', 'car']
+Benign End:  1632410392.7763638
+Attack Start:  1632410392.7763817
+Labels: ['person', 'person', 'car', 'car', 'car', 'car']
+Attack End:  1632410393.5933623
+---
+Now processing: car/2008_003405.jpg
+Benign Start:  1632410393.5935054
+Labels: ['car', 'person', 'car', 'car']
+Benign End:  1632410393.860365
+Attack Start:  1632410393.8603823
+Labels: ['dog', 'car']
+Attack End:  1632410394.65873
+---
+Now processing: car/2008_003941.jpg
+Benign Start:  1632410394.658879
+Labels: ['car']
+Benign End:  1632410394.9168622
+Attack Start:  1632410394.9168828
+Labels: []
+Attack End:  1632410395.7058773
+---
+Now processing: car/2008_000952.jpg
+Benign Start:  1632410395.7060337
+Labels: ['car', 'car', 'car', 'car', 'car']
+Benign End:  1632410395.9754457
+Attack Start:  1632410395.9754639
+Labels: ['tvmonitor']
+Attack End:  1632410396.7741544
+---
+Now processing: train/2008_007760.jpg
+Benign Start:  1632410396.7744946
+Labels: ['train']
+Benign End:  1632410397.0300758
+Attack Start:  1632410397.030095
+Labels: ['train']
+Attack End:  1632410397.8231025
+---
+Now processing: train/2009_001322.jpg
+Benign Start:  1632410397.8232524
+Labels: ['train']
+Benign End:  1632410398.0816424
+Attack Start:  1632410398.081662
+Labels: []
+Attack End:  1632410398.8629255
+---
+Now processing: train/2008_002222.jpg
+Benign Start:  1632410398.8630774
+Labels: ['train', 'person']
+Benign End:  1632410399.1252937
+Attack Start:  1632410399.125313
+Labels: ['car', 'person', 'dog']
+Attack End:  1632410399.9195642
+---
+Now processing: train/2008_008632.jpg
+Benign Start:  1632410399.9197388
+Labels: ['train']
+Benign End:  1632410400.2515304
+Attack Start:  1632410400.2515526
+Labels: ['chair']
+Attack End:  1632410401.0341525
+---
+Now processing: train/2008_008055.jpg
+Benign Start:  1632410401.0343049
+Labels: ['train', 'train']
+Benign End:  1632410401.2962165
+Attack Start:  1632410401.2962363
+Labels: ['train']
+Attack End:  1632410402.0921187
+---
+Now processing: train/2008_000003.jpg
+Benign Start:  1632410402.0922704
+Labels: ['train', 'person']
+Benign End:  1632410402.356756
+Attack Start:  1632410402.3567748
+Labels: []
+Attack End:  1632410403.145635
+---
+Now processing: train/2008_006368.jpg
+Benign Start:  1632410403.1457853
+Labels: ['train']
+Benign End:  1632410403.4019945
+Attack Start:  1632410403.4020138
+Labels: ['car']
+Attack End:  1632410404.193625
+---
+Now processing: train/2009_001350.jpg
+Benign Start:  1632410404.1937838
+Labels: ['train']
+Benign End:  1632410404.4534845
+Attack Start:  1632410404.453504
+Labels: ['pottedplant']
+Attack End:  1632410405.2500618
+---
+Now processing: train/2008_007189.jpg
+Benign Start:  1632410405.250215
+Labels: ['train']
+Benign End:  1632410405.5120034
+Attack Start:  1632410405.512023
+Labels: ['car']
+Attack End:  1632410406.3097985
+---
+Now processing: train/2008_008336.jpg
+Benign Start:  1632410406.309949
+Labels: ['train', 'person']
+Benign End:  1632410406.5744543
+Attack Start:  1632410406.5744736
+Labels: ['car', 'train']
+Attack End:  1632410407.3753037
+---
+Now processing: train/2008_007749.jpg
+Benign Start:  1632410407.375452
+Labels: ['train']
+Benign End:  1632410407.6353009
+Attack Start:  1632410407.63532
+Labels: ['motorbike']
+Attack End:  1632410408.4294622
+---
+Now processing: train/2008_008379.jpg
+Benign Start:  1632410408.4296126
+Labels: ['train']
+Benign End:  1632410408.6862154
+Attack Start:  1632410408.6862354
+Labels: ['motorbike']
+Attack End:  1632410409.476113
+---
+Now processing: train/2009_000022.jpg
+Benign Start:  1632410409.4762614
+Labels: ['train']
+Benign End:  1632410409.735184
+Attack Start:  1632410409.7352033
+Labels: ['dog']
+Attack End:  1632410410.5224488
+---
+Now processing: train/2008_008221.jpg
+Benign Start:  1632410410.5225956
+Labels: ['train', 'person']
+Benign End:  1632410410.7856505
+Attack Start:  1632410410.785669
+Labels: ['person', 'train']
+Attack End:  1632410411.5795662
+---
+Now processing: train/2009_000501.jpg
+Benign Start:  1632410411.5797248
+Labels: ['train']
+Benign End:  1632410411.838694
+Attack Start:  1632410411.8387134
+Labels: ['train']
+Attack End:  1632410412.6281447
+---
+Now processing: train/2008_000657.jpg
+Benign Start:  1632410412.628298
+Labels: ['train']
+Benign End:  1632410412.8869925
+Attack Start:  1632410412.8870115
+Labels: ['train']
+Attack End:  1632410413.6740785
+---
+Now processing: train/2009_000689.jpg
+Benign Start:  1632410413.674231
+Labels: ['train']
+Benign End:  1632410414.012021
+Attack Start:  1632410414.0120423
+Labels: ['train']
+Attack End:  1632410414.801952
+---
+Now processing: train/2008_001236.jpg
+Benign Start:  1632410414.8021004
+Labels: ['train']
+Benign End:  1632410415.0624397
+Attack Start:  1632410415.0624597
+Labels: ['train']
+Attack End:  1632410415.8582983
+---
+Now processing: train/2008_007521.jpg
+Benign Start:  1632410415.8584466
+Labels: ['train']
+Benign End:  1632410416.1159005
+Attack Start:  1632410416.1159198
+Labels: ['aeroplane']
+Attack End:  1632410416.9021106
+---
+Now processing: train/2008_002193.jpg
+Benign Start:  1632410416.9022615
+Labels: ['train']
+Benign End:  1632410417.163733
+Attack Start:  1632410417.1637526
+Labels: ['bus']
+Attack End:  1632410417.9589865
+---
+Now processing: train/2008_002965.jpg
+Benign Start:  1632410417.9591374
+Labels: ['train']
+Benign End:  1632410418.2173285
+Attack Start:  1632410418.2173479
+Labels: ['train']
+Attack End:  1632410419.0140812
+---
+Now processing: train/2008_008297.jpg
+Benign Start:  1632410419.0142312
+Labels: ['train']
+Benign End:  1632410419.2709453
+Attack Start:  1632410419.2709644
+Labels: ['car', 'person']
+Attack End:  1632410420.0696054
+---
+Now processing: train/2009_000628.jpg
+Benign Start:  1632410420.0697591
+Labels: ['train']
+Benign End:  1632410420.333274
+Attack Start:  1632410420.333293
+Labels: ['train']
+Attack End:  1632410421.1224601
+---
+Now processing: train/2008_006523.jpg
+Benign Start:  1632410421.1226084
+Labels: ['train']
+Benign End:  1632410421.3776295
+Attack Start:  1632410421.3776484
+Labels: ['car']
+Attack End:  1632410422.1706007
+---
+Now processing: train/2009_000051.jpg
+Benign Start:  1632410422.1707532
+Labels: ['train', 'train', 'train']
+Benign End:  1632410422.4342995
+Attack Start:  1632410422.4343185
+Labels: ['train', 'train', 'train']
+Attack End:  1632410423.2332501
+---
+Now processing: train/2008_008203.jpg
+Benign Start:  1632410423.2333949
+Labels: ['train']
+Benign End:  1632410423.494322
+Attack Start:  1632410423.4943402
+Labels: ['train', 'tvmonitor', 'bicycle']
+Attack End:  1632410424.2930715
+---
+Now processing: train/2009_000712.jpg
+Benign Start:  1632410424.2932174
+Labels: ['train']
+Benign End:  1632410424.5537202
+Attack Start:  1632410424.5537403
+Labels: ['train']
+Attack End:  1632410425.3393247
+---
+Now processing: train/2008_005544.jpg
+Benign Start:  1632410425.3394814
+Labels: ['train']
+Benign End:  1632410425.596856
+Attack Start:  1632410425.5968761
+Labels: []
+Attack End:  1632410426.3787043
+---
+Now processing: train/2008_008739.jpg
+Benign Start:  1632410426.3788576
+Labels: ['train']
+Benign End:  1632410426.6362538
+Attack Start:  1632410426.636273
+Labels: []
+Attack End:  1632410427.422508
+---
+Now processing: train/2009_001259.jpg
+Benign Start:  1632410427.4226615
+Labels: ['train']
+Benign End:  1632410427.7586088
+Attack Start:  1632410427.758642
+Labels: ['train', 'train']
+Attack End:  1632410428.553353
+---
+Now processing: train/2008_008751.jpg
+Benign Start:  1632410428.5535157
+Labels: ['train']
+Benign End:  1632410428.81649
+Attack Start:  1632410428.8165095
+Labels: []
+Attack End:  1632410429.60406
+---
+Now processing: train/2009_000283.jpg
+Benign Start:  1632410429.6042213
+Labels: ['train', 'car']
+Benign End:  1632410429.8677475
+Attack Start:  1632410429.867781
+Labels: ['car', 'car']
+Attack End:  1632410430.6617684
+---
+Now processing: train/2009_000824.jpg
+Benign Start:  1632410430.6619253
+Labels: ['train']
+Benign End:  1632410430.9233572
+Attack Start:  1632410430.9233766
+Labels: ['train']
+Attack End:  1632410431.7193298
+---
+Now processing: train/2008_004357.jpg
+Benign Start:  1632410431.7194774
+Labels: ['train']
+Benign End:  1632410431.979553
+Attack Start:  1632410431.9795728
+Labels: ['car']
+Attack End:  1632410432.7746973
+---
+Now processing: train/2008_008726.jpg
+Benign Start:  1632410432.774858
+Labels: ['train']
+Benign End:  1632410433.034005
+Attack Start:  1632410433.0340242
+Labels: ['person']
+Attack End:  1632410433.8276181
+---
+Now processing: train/2008_003826.jpg
+Benign Start:  1632410433.8277688
+Labels: ['train', 'train']
+Benign End:  1632410434.0914752
+Attack Start:  1632410434.0914936
+Labels: ['train', 'train']
+Attack End:  1632410434.8884077
+---
+Now processing: train/2008_006752.jpg
+Benign Start:  1632410434.8885617
+Labels: ['train']
+Benign End:  1632410435.1457434
+Attack Start:  1632410435.145763
+Labels: ['train']
+Attack End:  1632410435.9419007
+---
+Now processing: train/2008_008123.jpg
+Benign Start:  1632410435.9420497
+Labels: ['train']
+Benign End:  1632410436.2028964
+Attack Start:  1632410436.2029161
+Labels: ['train']
+Attack End:  1632410436.9888446
+---
+Now processing: train/2008_005446.jpg
+Benign Start:  1632410436.9891117
+Labels: ['train', 'car']
+Benign End:  1632410437.2499292
+Attack Start:  1632410437.2499483
+Labels: ['train', 'car']
+Attack End:  1632410438.0416448
+---
+Now processing: train/2008_005763.jpg
+Benign Start:  1632410438.041794
+Labels: ['train']
+Benign End:  1632410438.2973728
+Attack Start:  1632410438.297393
+Labels: ['train']
+Attack End:  1632410439.0873463
+---
+Now processing: train/2008_002900.jpg
+Benign Start:  1632410439.0874982
+Labels: ['train']
+Benign End:  1632410439.3474417
+Attack Start:  1632410439.3474612
+Labels: ['bicycle']
+Attack End:  1632410440.1393552
+---
+Now processing: train/2008_007787.jpg
+Benign Start:  1632410440.1395066
+Labels: ['person', 'train', 'person']
+Benign End:  1632410440.4044297
+Attack Start:  1632410440.4044476
+Labels: ['person', 'train']
+Attack End:  1632410441.1985784
+---
+Now processing: train/2009_000011.jpg
+Benign Start:  1632410441.1987398
+Labels: ['train']
+Benign End:  1632410441.5427608
+Attack Start:  1632410441.5427828
+Labels: ['train']
+Attack End:  1632410442.3309574
+---
+Now processing: train/2008_003263.jpg
+Benign Start:  1632410442.3311453
+Labels: ['train', 'train']
+Benign End:  1632410442.5927546
+Attack Start:  1632410442.5927901
+Labels: []
+Attack End:  1632410443.3847008
+---
+Now processing: train/2008_007084.jpg
+Benign Start:  1632410443.3848522
+Labels: ['train', 'person', 'person']
+Benign End:  1632410443.648339
+Attack Start:  1632410443.6483576
+Labels: ['aeroplane', 'person', 'car']
+Attack End:  1632410444.4551337
+---
+Now processing: train/2009_001007.jpg
+Benign Start:  1632410444.455283
+Labels: ['train']
+Benign End:  1632410444.7197838
+Attack Start:  1632410444.7198038
+Labels: ['horse']
+Attack End:  1632410445.5138285
+---
+Now processing: train/2008_005085.jpg
+Benign Start:  1632410445.513977
+Labels: ['train']
+Benign End:  1632410445.7680082
+Attack Start:  1632410445.7680268
+Labels: []
+Attack End:  1632410446.558926
+---
+Now processing: train/2008_008676.jpg
+Benign Start:  1632410446.559087
+Labels: ['train', 'person']
+Benign End:  1632410446.8184319
+Attack Start:  1632410446.8184505
+Labels: ['train', 'person']
+Attack End:  1632410447.6183321
+---
+Now processing: train/2008_008732.jpg
+Benign Start:  1632410447.618514
+Labels: ['train']
+Benign End:  1632410447.8758035
+Attack Start:  1632410447.8758225
+Labels: []
+Attack End:  1632410448.6741874
+---
+Now processing: train/2009_001333.jpg
+Benign Start:  1632410448.6743412
+Labels: ['train']
+Benign End:  1632410448.932779
+Attack Start:  1632410448.9327986
+Labels: ['train']
+Attack End:  1632410449.7238567
+---
+Now processing: train/2008_008001.jpg
+Benign Start:  1632410449.72401
+Labels: ['car', 'train']
+Benign End:  1632410449.9867444
+Attack Start:  1632410449.9867628
+Labels: ['car', 'aeroplane']
+Attack End:  1632410450.8019238
+---
+Now processing: train/2008_007105.jpg
+Benign Start:  1632410450.80208
+Labels: ['train']
+Benign End:  1632410451.06382
+Attack Start:  1632410451.0638392
+Labels: ['car', 'person']
+Attack End:  1632410451.8534226
+---
+Now processing: train/2008_004367.jpg
+Benign Start:  1632410451.8535714
+Labels: ['train', 'train']
+Benign End:  1632410452.1174269
+Attack Start:  1632410452.1174464
+Labels: ['train', 'train']
+Attack End:  1632410452.9135582
+---
+Now processing: train/2008_005801.jpg
+Benign Start:  1632410452.9137104
+Labels: ['train']
+Benign End:  1632410453.1759117
+Attack Start:  1632410453.1759303
+Labels: ['car']
+Attack End:  1632410453.965015
+---
+Now processing: train/2008_008302.jpg
+Benign Start:  1632410453.9652078
+Labels: ['train']
+Benign End:  1632410454.2212234
+Attack Start:  1632410454.2212427
+Labels: ['aeroplane']
+Attack End:  1632410455.0877275
+---
+Now processing: train/2009_001164.jpg
+Benign Start:  1632410455.0878992
+Labels: ['train']
+Benign End:  1632410455.3513262
+Attack Start:  1632410455.351345
+Labels: ['train']
+Attack End:  1632410456.1449244
+---
+Now processing: train/2008_003105.jpg
+Benign Start:  1632410456.1451788
+Labels: ['train']
+Benign End:  1632410456.4032779
+Attack Start:  1632410456.4032967
+Labels: ['dog', 'boat']
+Attack End:  1632410457.1938548
+---
+Now processing: train/2009_001534.jpg
+Benign Start:  1632410457.1940014
+Labels: ['train']
+Benign End:  1632410457.4562132
+Attack Start:  1632410457.4562323
+Labels: []
+Attack End:  1632410458.2471414
+---
+Now processing: train/2008_001905.jpg
+Benign Start:  1632410458.2472968
+Labels: ['person', 'train', 'person']
+Benign End:  1632410458.5110984
+Attack Start:  1632410458.5111163
+Labels: ['person', 'person']
+Attack End:  1632410459.3132675
+---
+Now processing: train/2008_002452.jpg
+Benign Start:  1632410459.3134158
+Labels: ['train']
+Benign End:  1632410459.5706918
+Attack Start:  1632410459.5707111
+Labels: ['pottedplant']
+Attack End:  1632410460.3665125
+---
+Now processing: train/2008_004214.jpg
+Benign Start:  1632410460.3666654
+Labels: ['train']
+Benign End:  1632410460.6274714
+Attack Start:  1632410460.6274889
+Labels: ['bus']
+Attack End:  1632410461.424432
+---
+Now processing: train/2009_001519.jpg
+Benign Start:  1632410461.424582
+Labels: ['car', 'train']
+Benign End:  1632410461.686412
+Attack Start:  1632410461.6864314
+Labels: ['train']
+Attack End:  1632410462.4845097
+---
+Now processing: train/2009_000597.jpg
+Benign Start:  1632410462.4846585
+Labels: ['train', 'train']
+Benign End:  1632410462.7474353
+Attack Start:  1632410462.7474544
+Labels: []
+Attack End:  1632410463.537806
+---
+Now processing: train/2008_008192.jpg
+Benign Start:  1632410463.5379672
+Labels: ['person', 'train', 'person']
+Benign End:  1632410463.8029976
+Attack Start:  1632410463.8030176
+Labels: ['person', 'boat', 'person']
+Attack End:  1632410464.601142
+---
+Now processing: train/2008_007887.jpg
+Benign Start:  1632410464.601289
+Labels: ['train', 'car']
+Benign End:  1632410464.8657277
+Attack Start:  1632410464.865747
+Labels: ['pottedplant', 'motorbike']
+Attack End:  1632410465.663592
+---
+Now processing: train/2008_000916.jpg
+Benign Start:  1632410465.6637533
+Labels: ['train', 'pottedplant', 'person', 'person', 'person']
+Benign End:  1632410465.9377573
+Attack Start:  1632410465.9377747
+Labels: ['train', 'person', 'person', 'person', 'person']
+Attack End:  1632410466.7475245
+---
+Now processing: train/2008_005185.jpg
+Benign Start:  1632410466.747677
+Labels: ['train']
+Benign End:  1632410467.0064273
+Attack Start:  1632410467.006447
+Labels: ['bicycle']
+Attack End:  1632410467.7970817
+---
+Now processing: train/2009_001300.jpg
+Benign Start:  1632410467.797236
+Labels: ['train']
+Benign End:  1632410468.135273
+Attack Start:  1632410468.1352954
+Labels: []
+Attack End:  1632410468.9173636
+---
+Now processing: train/2008_008767.jpg
+Benign Start:  1632410468.9175227
+Labels: ['train', 'bird']
+Benign End:  1632410469.180465
+Attack Start:  1632410469.1804836
+Labels: ['dog', 'train']
+Attack End:  1632410469.9798636
+---
+Now processing: train/2009_000890.jpg
+Benign Start:  1632410469.9800239
+Labels: ['person', 'train']
+Benign End:  1632410470.2421944
+Attack Start:  1632410470.2422137
+Labels: ['person', 'car', 'person']
+Attack End:  1632410471.0393186
+---
+Now processing: train/2008_006055.jpg
+Benign Start:  1632410471.039473
+Labels: ['train']
+Benign End:  1632410471.3012288
+Attack Start:  1632410471.301248
+Labels: ['train']
+Attack End:  1632410472.09625
+---
+Now processing: train/2008_001850.jpg
+Benign Start:  1632410472.0964012
+Labels: ['train']
+Benign End:  1632410472.3512626
+Attack Start:  1632410472.3512826
+Labels: ['car']
+Attack End:  1632410473.1465032
+---
+Now processing: train/2008_003737.jpg
+Benign Start:  1632410473.146652
+Labels: ['train']
+Benign End:  1632410473.406508
+Attack Start:  1632410473.4065266
+Labels: []
+Attack End:  1632410474.1994836
+---
+Now processing: train/2008_000373.jpg
+Benign Start:  1632410474.1996503
+Labels: ['train']
+Benign End:  1632410474.4576502
+Attack Start:  1632410474.4576693
+Labels: ['car']
+Attack End:  1632410475.2553089
+---
+Now processing: train/2008_001625.jpg
+Benign Start:  1632410475.2554853
+Labels: ['train']
+Benign End:  1632410475.5133202
+Attack Start:  1632410475.5133398
+Labels: ['motorbike']
+Attack End:  1632410476.3093455
+---
+Now processing: train/2009_001118.jpg
+Benign Start:  1632410476.3094969
+Labels: ['train', 'train']
+Benign End:  1632410476.5766299
+Attack Start:  1632410476.5766492
+Labels: ['car']
+Attack End:  1632410477.3837132
+---
+Now processing: train/2009_000658.jpg
+Benign Start:  1632410477.3838766
+Labels: ['train']
+Benign End:  1632410477.6475897
+Attack Start:  1632410477.6476102
+Labels: ['train']
+Attack End:  1632410478.4542053
+---
+Now processing: train/2008_006553.jpg
+Benign Start:  1632410478.4543538
+Labels: ['train']
+Benign End:  1632410478.7301145
+Attack Start:  1632410478.730134
+Labels: ['car']
+Attack End:  1632410479.5313683
+---
+Now processing: train/2008_002158.jpg
+Benign Start:  1632410479.531528
+Labels: ['train']
+Benign End:  1632410479.8021693
+Attack Start:  1632410479.8021884
+Labels: ['bus', 'car']
+Attack End:  1632410480.594391
+---
+Now processing: train/2009_001245.jpg
+Benign Start:  1632410480.5945494
+Labels: ['train']
+Benign End:  1632410480.8541627
+Attack Start:  1632410480.8541813
+Labels: ['train']
+Attack End:  1632410481.6785102
+---
+Now processing: train/2008_005825.jpg
+Benign Start:  1632410481.678663
+Labels: ['person', 'person', 'train', 'person', 'person']
+Benign End:  1632410482.032569
+Attack Start:  1632410482.0325885
+Labels: ['person', 'person', 'person', 'train']
+Attack End:  1632410482.840607
+---
+Now processing: train/2008_004852.jpg
+Benign Start:  1632410482.840752
+Labels: ['train']
+Benign End:  1632410483.0987186
+Attack Start:  1632410483.0987372
+Labels: ['train']
+Attack End:  1632410483.894149
+---
+Now processing: train/2009_001468.jpg
+Benign Start:  1632410483.894315
+Labels: ['train', 'person']
+Benign End:  1632410484.1561208
+Attack Start:  1632410484.1561394
+Labels: ['person', 'car']
+Attack End:  1632410484.9492671
+---
+Now processing: train/2008_008662.jpg
+Benign Start:  1632410484.9494169
+Labels: ['train', 'car', 'train']
+Benign End:  1632410485.2136157
+Attack Start:  1632410485.2136328
+Labels: ['train', 'train', 'car']
+Attack End:  1632410486.0452254
+---
+Now processing: train/2008_005282.jpg
+Benign Start:  1632410486.0455122
+Labels: ['train', 'train']
+Benign End:  1632410486.3521771
+Attack Start:  1632410486.3522046
+Labels: ['person', 'dog']
+Attack End:  1632410487.2396514
+---
+Now processing: train/2008_008615.jpg
+Benign Start:  1632410487.2399073
+Labels: ['train']
+Benign End:  1632410487.5224566
+Attack Start:  1632410487.522475
+Labels: ['person']
+Attack End:  1632410488.3199997
+---
+Now processing: train/2008_006900.jpg
+Benign Start:  1632410488.3201816
+Labels: ['train']
+Benign End:  1632410488.5790262
+Attack Start:  1632410488.5790462
+Labels: ['train']
+Attack End:  1632410489.3709595
+---
+Now processing: train/2008_004212.jpg
+Benign Start:  1632410489.371109
+Labels: ['train']
+Benign End:  1632410489.6300445
+Attack Start:  1632410489.6300633
+Labels: ['car']
+Attack End:  1632410490.4227562
+---
+Now processing: train/2008_008690.jpg
+Benign Start:  1632410490.4229684
+Labels: ['train', 'person']
+Benign End:  1632410490.683446
+Attack Start:  1632410490.6834643
+Labels: ['aeroplane', 'dog']
+Attack End:  1632410491.4781842
+---
+Now processing: train/2008_006010.jpg
+Benign Start:  1632410491.4783335
+Labels: ['train', 'train']
+Benign End:  1632410491.7423332
+Attack Start:  1632410491.7423518
+Labels: ['train', 'train']
+Attack End:  1632410492.5385857
+---
+Now processing: train/2008_000190.jpg
+Benign Start:  1632410492.5387342
+Labels: ['train']
+Benign End:  1632410492.800091
+Attack Start:  1632410492.800111
+Labels: []
+Attack End:  1632410493.5844574
+---
+Now processing: train/2008_004610.jpg
+Benign Start:  1632410493.5846071
+Labels: ['train']
+Benign End:  1632410493.8452659
+Attack Start:  1632410493.8452919
+Labels: ['train']
+Attack End:  1632410494.6503253
+---
+Now processing: train/2009_000090.jpg
+Benign Start:  1632410494.650475
+Labels: ['train']
+Benign End:  1632410494.906782
+Attack Start:  1632410494.906802
+Labels: ['car']
+Attack End:  1632410495.7670355
+---
+Now processing: train/2008_001114.jpg
+Benign Start:  1632410495.7671933
+Labels: ['train']
+Benign End:  1632410496.0282416
+Attack Start:  1632410496.028265
+Labels: ['car']
+Attack End:  1632410496.8341978
+---
+Now processing: train/2008_007247.jpg
+Benign Start:  1632410496.834351
+Labels: ['person', 'train']
+Benign End:  1632410497.0965533
+Attack Start:  1632410497.0965726
+Labels: ['person', 'chair']
+Attack End:  1632410497.896555
+---
+Now processing: train/2009_000845.jpg
+Benign Start:  1632410497.8967066
+Labels: ['train']
+Benign End:  1632410498.1506982
+Attack Start:  1632410498.150717
+Labels: []
+Attack End:  1632410498.9431522
+---
+Now processing: train/2008_006849.jpg
+Benign Start:  1632410498.9433029
+Labels: []
+Benign End:  1632410499.1973383
+Attack Start:  1632410499.1973567
+too many indices for array: array is 1-dimensional, but 2 were indexed
+Exception processing train/2008_006849.jpg
+---
+Now processing: train/2009_000244.jpg
+Benign Start:  1632410499.3845952
+Labels: ['train']
+Benign End:  1632410499.6363215
+Attack Start:  1632410499.6363404
+Labels: []
+Attack End:  1632410500.4279726
+---
+Now processing: train/2008_007231.jpg
+Benign Start:  1632410500.4281297
+Labels: ['train']
+Benign End:  1632410500.6833556
+Attack Start:  1632410500.6833746
+Labels: ['boat']
+Attack End:  1632410501.4718359
+---
+Now processing: train/2008_008527.jpg
+Benign Start:  1632410501.4719877
+Labels: ['train', 'train']
+Benign End:  1632410501.7435095
+Attack Start:  1632410501.7435327
+Labels: ['train', 'train']
+Attack End:  1632410502.6627831
