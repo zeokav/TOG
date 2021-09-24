@@ -68,7 +68,7 @@ def extract_divergence():
     counts_ssd = {}
     counts_yolo = {}
     for file in yolo_entries.keys():
-        if 'dog' not in file or file not in ssd_entries:
+        if 'bird' not in file or file not in ssd_entries:
             continue
 
         for label in yolo_entries.get(file).get('att_labels'):
@@ -83,10 +83,11 @@ def extract_divergence():
 
     plt.xticks(ind + width / 2, all_classes)
 
-    plt.title("Divergence of 'dog' across YOLO and SSD")
+    plt.title("Divergence of 'bird' across YOLO and SSD")
     plt.bar(ind, [counts_yolo.get(key, 0) for key in all_classes], width, label='YOLO')
     plt.bar(ind + width, [counts_ssd.get(key, 0) for key in all_classes], width, label='SSD')
 
+    plt.legend()
     plt.show()
 
 
